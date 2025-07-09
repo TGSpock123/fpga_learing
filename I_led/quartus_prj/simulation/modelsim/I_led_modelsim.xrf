@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, D:/GitHub/fpga_learing/I_led/sim/tb_led.v
+source_file = 1, D:/GitHub/fpga_learing/I_led/rtl/led.v
+source_file = 1, D:/GitHub/fpga_learing/I_led/quartus_prj/db/I_led.cbx.xml
+design_name = I_led
+instance = comp, \led_out~output , led_out~output, I_led, 1
+instance = comp, \key_in~input , key_in~input, I_led, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1
