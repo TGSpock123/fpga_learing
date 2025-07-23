@@ -1,5 +1,5 @@
 Analysis & Synthesis report for I_led
-Tue Jul 08 17:54:03 2025
+Tue Jul 22 16:00:33 2025
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jul 08 17:54:03 2025           ;
+; Analysis & Synthesis Status        ; Successful - Tue Jul 22 16:00:33 2025           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; I_led                                           ;
 ; Top-level Entity Name              ; I_led                                           ;
@@ -254,7 +254,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Tue Jul 08 17:53:54 2025
+    Info: Processing started: Tue Jul 22 16:00:25 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off I_led -c I_led
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file /github/fpga_learing/i_led/sim/tb_led.v
@@ -268,9 +268,9 @@ Info (21057): Implemented 2 device resources after synthesis - the final resourc
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 1 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4727 megabytes
-    Info: Processing ended: Tue Jul 08 17:54:03 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4730 megabytes
+    Info: Processing ended: Tue Jul 22 16:00:33 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:19
 
 

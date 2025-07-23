@@ -1,5 +1,5 @@
 Timing Analyzer report for I_led
-Tue Jul 08 17:54:10 2025
+Tue Jul 22 16:00:40 2025
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -371,7 +371,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Tue Jul 08 17:54:09 2025
+    Info: Processing started: Tue Jul 22 16:00:39 2025
 Info: Command: quartus_sta I_led -c I_led
 Info: qsta_default_script.tcl version: #2
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -418,8 +418,8 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4747 megabytes
-    Info: Processing ended: Tue Jul 08 17:54:10 2025
+    Info: Peak virtual memory: 4743 megabytes
+    Info: Processing ended: Tue Jul 22 16:00:40 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
