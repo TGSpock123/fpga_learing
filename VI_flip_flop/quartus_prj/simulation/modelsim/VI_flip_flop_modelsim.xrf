@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, D:/GitHub/fpga_learing/VI_flip_flop/rtl/VI_flip_flop.v
+source_file = 1, D:/GitHub/fpga_learing/VI_flip_flop/quartus_prj/db/VI_flip_flop.cbx.xml
+design_name = VI_flip_flop
+instance = comp, \led_0~output , led_0~output, VI_flip_flop, 1
+instance = comp, \system_clk~input , system_clk~input, VI_flip_flop, 1
+instance = comp, \key_0~input , key_0~input, VI_flip_flop, 1
+instance = comp, \led_0~reg0feeder , led_0~reg0feeder, VI_flip_flop, 1
+instance = comp, \system_reset~input , system_reset~input, VI_flip_flop, 1
+instance = comp, \led_0~reg0 , led_0~reg0, VI_flip_flop, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

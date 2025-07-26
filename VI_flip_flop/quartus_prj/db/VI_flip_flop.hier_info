@@ -1,0 +1,7 @@
+|VI_flip_flop
+system_clk => led_0~reg0.CLK
+system_reset => led_0~reg0.ACLR
+key_0 => led_0~reg0.DATAIN
+led_0 << led_0~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
