@@ -5,7 +5,6 @@ design_name = VI_flip_flop
 instance = comp, \led_0~output , led_0~output, VI_flip_flop, 1
 instance = comp, \system_clk~input , system_clk~input, VI_flip_flop, 1
 instance = comp, \key_0~input , key_0~input, VI_flip_flop, 1
-instance = comp, \led_0~reg0feeder , led_0~reg0feeder, VI_flip_flop, 1
 instance = comp, \system_reset~input , system_reset~input, VI_flip_flop, 1
 instance = comp, \led_0~reg0 , led_0~reg0, VI_flip_flop, 1
 design_name = hard_block

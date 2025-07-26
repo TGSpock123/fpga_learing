@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VI_flip_flop
-Sat Jul 26 16:20:21 2025
+Sat Jul 26 23:20:44 2025
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jul 26 16:20:21 2025           ;
+; Analysis & Synthesis Status        ; Successful - Sat Jul 26 23:20:44 2025           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; VI_flip_flop                                    ;
 ; Top-level Entity Name              ; VI_flip_flop                                    ;
@@ -256,7 +256,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Sat Jul 26 16:20:12 2025
+    Info: Processing started: Sat Jul 26 23:20:34 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VI_flip_flop -c VI_flip_flop
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -271,9 +271,9 @@ Info (21057): Implemented 5 device resources after synthesis - the final resourc
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4746 megabytes
-    Info: Processing ended: Sat Jul 26 16:20:21 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4745 megabytes
+    Info: Processing ended: Sat Jul 26 23:20:44 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:24
 
 

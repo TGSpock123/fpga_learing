@@ -29,7 +29,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "VI_flip_flop")
-  (DATE "07/26/2025 16:20:32")
+  (DATE "07/26/2025 23:20:54")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition")
@@ -41,8 +41,8 @@
     (INSTANCE led_0\~output)
     (DELAY
       (ABSOLUTE
-        (PORT i (253:253:253) (292:292:292))
-        (IOPATH i o (1612:1612:1612) (1615:1615:1615))
+        (PORT i (642:642:642) (753:753:753))
+        (IOPATH i o (1572:1572:1572) (1575:1575:1575))
       )
     )
   )
@@ -51,7 +51,7 @@
     (INSTANCE system_clk\~input)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (308:308:308) (687:687:687))
+        (IOPATH i o (318:318:318) (698:698:698))
       )
     )
   )
@@ -60,17 +60,7 @@
     (INSTANCE key_0\~input)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (288:288:288) (667:667:667))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE led_0\~reg0feeder)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (1592:1592:1592) (1774:1774:1774))
-        (IOPATH datad combout (68:68:68) (63:63:63))
+        (IOPATH i o (328:328:328) (708:708:708))
       )
     )
   )
@@ -79,7 +69,7 @@
     (INSTANCE system_reset\~input)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (278:278:278) (657:657:657))
+        (IOPATH i o (338:338:338) (718:718:718))
       )
     )
   )
@@ -88,15 +78,15 @@
     (INSTANCE led_0\~reg0)
     (DELAY
       (ABSOLUTE
-        (PORT clk (726:726:726) (758:758:758))
-        (PORT d (37:37:37) (50:50:50))
-        (PORT clrn (2102:2102:2102) (1902:1902:1902))
+        (PORT clk (708:708:708) (661:661:661))
+        (PORT asdata (554:554:554) (515:515:515))
+        (PORT clrn (1207:1207:1207) (1345:1345:1345))
         (IOPATH (posedge clk) q (105:105:105) (105:105:105))
         (IOPATH (negedge clrn) q (110:110:110) (110:110:110))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (84:84:84))
+      (HOLD asdata (posedge clk) (84:84:84))
     )
   )
 )
