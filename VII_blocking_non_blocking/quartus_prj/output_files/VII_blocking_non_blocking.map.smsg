@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at VII_blocking_non_blocking.v(13): always construct contains both blocking and non-blocking assignments File: D:/GitHub/fpga_learing/VII_blocking_non_blocking/rtl/VII_blocking_non_blocking.v Line: 13
