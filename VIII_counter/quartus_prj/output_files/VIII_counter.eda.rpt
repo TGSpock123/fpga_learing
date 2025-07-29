@@ -1,5 +1,5 @@
 EDA Netlist Writer report for VIII_counter
-Mon Jul 28 23:34:58 2025
+Tue Jul 29 09:30:54 2025
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Jul 28 23:34:58 2025 ;
+; EDA Netlist Writer Status ; Successful - Tue Jul 29 09:30:54 2025 ;
 ; Revision Name             ; VIII_counter                          ;
 ; Top-level Entity Name     ; VIII_counter                          ;
 ; Family                    ; Cyclone IV E                          ;
@@ -88,7 +88,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Mon Jul 28 23:34:58 2025
+    Info: Processing started: Tue Jul 29 09:30:53 2025
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off VIII_counter -c VIII_counter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file VIII_counter_8_1200mv_85c_slow.vo in folder "D:/GitHub/fpga_learing/VIII_counter/quartus_prj/simulation/modelsim/" for EDA simulation tool
@@ -100,9 +100,9 @@ Info (204019): Generated file VIII_counter_8_1200mv_0c_v_slow.sdo in folder "D:/
 Info (204019): Generated file VIII_counter_min_1200mv_0c_v_fast.sdo in folder "D:/GitHub/fpga_learing/VIII_counter/quartus_prj/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file VIII_counter_v.sdo in folder "D:/GitHub/fpga_learing/VIII_counter/quartus_prj/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4633 megabytes
-    Info: Processing ended: Mon Jul 28 23:34:58 2025
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4632 megabytes
+    Info: Processing ended: Tue Jul 29 09:30:54 2025
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
