@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "key_0_flag",
+					"strict" : false
+				},
+				{
+					"name" : "system_clock",
+					"strict" : false
+				},
+				{
+					"name" : "system_reset_n",
+					"strict" : false
+				},
+				{
+					"name" : "key_0",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

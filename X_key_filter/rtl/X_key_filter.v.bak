@@ -1,0 +1,35 @@
+module X_key_filter
+#(
+  parameter   COUNT_MAX = 20'd999_999
+)(
+  input   wire    system_clock,
+  input   wire    system_reset_n,
+  input   wire    key_0,
+  output  reg     key_0_flag
+)
+
+reg   [19:0]    count_20_ms;
+
+always@(posedge system_clock or negedge system_reset_n) begin
+  if(system_reset_n == 1'b0) begin
+    count_20_ms <= 20'b0;
+  end else if(key_0 == 1'b1) begin
+    count_20_ms <= 20'b0;
+  end else if(count_20_ms == COUNT_MAX && key_0 == 1'b0) begin
+    count_20_ms <= count_20_ms;
+  end else
+    count_20_ms <= count_20_ms + 1;
+  end
+end
+
+always@(posedge system_clock or negedge system_reset_n) begin
+  if(system_reset_n == 1'b0) begin
+    key_0_flag <= 1'b0;
+  end else if(count_20_ms == COUNT_MAX - 1'b1) begin
+    key_0_flag <= 1'b1;
+  end else begin
+    key_0_flag <= 1'b0;
+  end
+end
+
+endmodule
