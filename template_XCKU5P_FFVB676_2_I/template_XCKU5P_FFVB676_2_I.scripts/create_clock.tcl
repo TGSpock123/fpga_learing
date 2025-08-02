@@ -1,0 +1,1 @@
+create_clock -name clock_system -period 10 [get_ports clock_system]

@@ -27,11 +27,11 @@ module run_led
 (
   input  wire         clock_system,
   input  wire         reset_system_n,
-  output wire  [1:0]  led
+  output wire  [3:0]  led
 );
 reg  [31:0]   reg_count;
-reg  [1:0]    reg_led;
-assign led = ~reg_led;
+reg  [3:0]    reg_led;
+assign led = reg_led;
 
 always @(posedge clock_system or negedge reset_system_n) begin
   if (!reset_system_n) begin
@@ -47,10 +47,10 @@ wire en_led = (reg_count == COUNT_MAX);
 
 always @(posedge clock_system or negedge reset_system_n) begin
   if (!reset_system_n) begin
-    reg_led <= 2'b1;
+    reg_led <= 4'b0_001;
   end else if (en_led) begin
-    if (reg_led == 2'b10) begin
-      reg_led <= 2'b1;
+    if (reg_led == 4'b1_000) begin
+      reg_led <= 4'b0_001;
     end else begin
       reg_led <= reg_led << 1;
     end

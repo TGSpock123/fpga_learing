@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Aug  2 12:20:26 2025
+# Process ID         : 10976
+# Current directory  : D:/GitHub/fpga_learing/XII_breath_led
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent24216 D:\GitHub\fpga_learing\XII_breath_led\template_XCKU5P_FFVB676_2_I.xpr
+# Log file           : D:/GitHub/fpga_learing/XII_breath_led/vivado.log
+# Journal file       : D:/GitHub/fpga_learing/XII_breath_led\vivado.jou
+# Running On         : DESKTOP-IMB8E6N
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency      : 2400 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17013 MB
+# Swap memory        : 3216 MB
+# Total Virtual      : 20230 MB
+# Available Virtual  : 10391 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/GitHub/fpga_learing/XII_breath_led/template_XCKU5P_FFVB676_2_I.xpr
+update_compile_order -fileset sources_1
+synth_design -top breath_led -part xcku5p-ffva676-2-i -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+source breath_led.tcl
+close_sim
+synth_design -top breath_led -part xcku5p-ffva676-2-i -lint 
+synth_design -top breath_led -part xcku5p-ffva676-2-i -lint 

@@ -24,7 +24,7 @@ module tb_run_led();
 
 reg clock_system;
 reg reset_system_n;
-wire [1:0] led;
+wire [3:0] led;
 
 run_led 
 #(
