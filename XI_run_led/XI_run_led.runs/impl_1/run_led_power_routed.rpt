@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Sat Aug  2 23:34:53 2025
+| Date             : Sun Aug  3 10:49:21 2025
 | Host             : DESKTOP-IMB8E6N running 64-bit major release  (build 9200)
 | Command          : report_power -file run_led_power_routed.rpt -pb run_led_power_summary_routed.pb -rpx run_led_power_routed.rpx
 | Design           : run_led
@@ -52,13 +52,13 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| CLB Logic      |     0.255 |       82 |       --- |             --- |
-|   LUT as Logic |     0.216 |       40 |    216960 |            0.02 |
+| CLB Logic      |     0.240 |       81 |       --- |             --- |
+|   LUT as Logic |     0.201 |       39 |    216960 |            0.02 |
 |   Register     |     0.022 |       31 |    433920 |           <0.01 |
 |   CARRY8       |     0.016 |        4 |     27120 |            0.01 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |     0.195 |       78 |       --- |             --- |
+| Signals        |     0.210 |       77 |       --- |             --- |
 | I/O            |     0.007 |        6 |       280 |            2.14 |
 | Static Power   |     0.454 |          |           |                 |
 | Total          |     0.911 |          |           |                 |

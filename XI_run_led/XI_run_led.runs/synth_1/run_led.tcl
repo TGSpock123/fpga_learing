@@ -56,11 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param synth.incrementalSynthesisCache D:/GitHub/fpga_learing/XI_run_led/.Xil/Vivado-22712-DESKTOP-IMB8E6N/incrSyn
-set_param checkpoint.writeSynthRtdsInDcp 1
 set_param simulator.modelsimInstallPath D:/modelsim/win64
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xcku5p-ffvb676-2-i
 

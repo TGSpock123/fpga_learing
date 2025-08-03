@@ -31,7 +31,13 @@ module run_led
 );
 reg  [31:0]   reg_count;
 reg  [3:0]    reg_led;
-assign led = reg_led;
+assign led = ~reg_led;
+localparam [3:0]
+LED_0 = 4'b1_011,
+LED_1 = 4'b0_111,
+LED_2 = 4'b0_001,
+LED_3 = 4'b0_010;
+
 
 always @(posedge clock_system or negedge reset_system_n) begin
   if (!reset_system_n) begin
@@ -47,13 +53,20 @@ wire en_led = (reg_count == COUNT_MAX);
 
 always @(posedge clock_system or negedge reset_system_n) begin
   if (!reset_system_n) begin
-    reg_led <= 4'b0_001;
+    reg_led <= LED_0;
   end else if (en_led) begin
-    if (reg_led == 4'b1_000) begin
-      reg_led <= 4'b0_001;
-    end else begin
-      reg_led <= reg_led << 1;
-    end
+    case (reg_led)
+      LED_0:
+        reg_led <= LED_1;
+      LED_1:
+        reg_led <= LED_2;
+      LED_2:
+        reg_led <= LED_3;
+      LED_3:
+        reg_led <= LED_0;
+      default: 
+        reg_led <= LED_0;
+    endcase
   end
 end
 
