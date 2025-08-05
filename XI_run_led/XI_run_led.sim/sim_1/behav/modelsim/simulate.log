@@ -13,8 +13,8 @@
 # //
 # do {tb_run_led_simulate.do}
 # vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib xil_defaultlib.tb_run_led xil_defaultlib.glbl 
-# Start time: 10:13:34 on Aug 03,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 13:47:54 on Aug 05,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vopt-143) Recognized 1 FSM in module "run_led(fast)".
 # Loading work.tb_run_led(fast)
 # Loading work.run_led(fast)
@@ -24,5 +24,5 @@
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# End time: 10:14:23 on Aug 03,2025, Elapsed time: 0:00:49
+# End time: 13:48:20 on Aug 05,2025, Elapsed time: 0:00:26
 # Errors: 0, Warnings: 0

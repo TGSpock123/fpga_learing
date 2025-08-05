@@ -1,14 +1,14 @@
 ===================================
 Configuration Memory information
 ===================================
-File Format        MCS
+File Format        BIN
 Interface          SPIX4
 Size               32M
 Start Address      0x00000000
 End Address        0x01FFFFFF
-Checksum           0xC4F29FAA
+Checksum           0xC5345244
 Fill Value         0xFF
 
 Addr1         Addr2         Date                    File(s)                                                                 Checksum
-0x00000000    0x003A9BE7    Aug  3 10:49:40 2025    D:/GitHub/fpga_learing/XI_run_led/XI_run_led.runs/impl_1/run_led.bit    0x0153EBC2
-File Checksum Total                                                                                                         0x0153EBC2
+0x00000000    0x003A595F    Aug  5 13:59:08 2025    D:/GitHub/fpga_learing/XI_run_led/XI_run_led.runs/impl_1/run_led.bit    0x015358E4
+File Checksum Total                                                                                                         0x015358E4

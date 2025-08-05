@@ -55,8 +55,29 @@ if {$::dispatch::connected} {
   }
 }
 
+proc create_report { reportName command } {
+  set status "."
+  append status $reportName ".fail"
+  if { [file exists $status] } {
+    eval file delete [glob $status]
+  }
+  send_msg_id runtcl-4 info "Executing : $command"
+  set retval [eval catch { $command } msg]
+  if { $retval != 0 } {
+    set fp [open $status w]
+    close $fp
+    send_msg_id runtcl-5 warning "$msg"
+  }
+}
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param power.BramSDPPropagationFix 1
+set_param power.enableUnconnectedCarry8PinPower 1
+set_param power.enableCarry8RouteBelPower 1
+set_param power.enableLutRouteBelPower 1
+set_param synth.incrementalSynthesisCache C:/Users/tgspo/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-20696-DESKTOP-IMB8E6N/incrSyn
 set_param simulator.modelsimInstallPath D:/modelsim/win64
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xcku5p-ffvb676-2-i
 
@@ -81,12 +102,10 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/GitHub/fpga_learing/XI_run_led/XI_run_led.srcs/constrs_1/new/mlk_h7_ku5p_pin.xdc
-set_property used_in_implementation false [get_files D:/GitHub/fpga_learing/XI_run_led/XI_run_led.srcs/constrs_1/new/mlk_h7_ku5p_pin.xdc]
+read_xdc D:/GitHub/fpga_learing/XI_run_led/XI_run_led.srcs/constrs_1/new/run_led.xdc
+set_property used_in_implementation false [get_files D:/GitHub/fpga_learing/XI_run_led/XI_run_led.srcs/constrs_1/new/run_led.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
-
-read_checkpoint -auto_incremental -incremental D:/GitHub/fpga_learing/XI_run_led/XI_run_led.srcs/utils_1/imports/synth_1/run_led.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
@@ -103,7 +122,7 @@ set_param constraints.enableBinaryConstraints false
 write_checkpoint -force -noxdef run_led.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-generate_parallel_reports -reports { "report_utilization -file run_led_utilization_synth.rpt -pb run_led_utilization_synth.pb"  } 
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file run_led_utilization_synth.rpt -pb run_led_utilization_synth.pb"
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

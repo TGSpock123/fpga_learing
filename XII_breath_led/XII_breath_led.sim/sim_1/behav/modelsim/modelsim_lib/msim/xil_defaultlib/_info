@@ -1,0 +1,91 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.sim/sim_1/behav/modelsim
+T_opt
+!s110 1754384380
+V9mZ2m5P@@UcWIZMYH>cUl2
+04 13 4 work tb_breath_led fast 0
+04 4 4 work glbl fast 0
+=1-0068eb5799b6-6891c7fb-38a-5c10
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vbreath_led
+!s10a 1754383704
+!s110 1754384323
+!i10b 1
+!s100 n2QNaC_=fXFmnz<GH?noi0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I=zjH4MEPF`z`C3c[<?S]^2
+R0
+w1754383704
+8../../../../XII_breath_led.srcs/sources_1/new/breath_led.v
+F../../../../XII_breath_led.srcs/sources_1/new/breath_led.v
+!i122 6
+L0 22 84
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2020.4;71
+r1
+!s85 0
+31
+!s108 1754384323.000000
+Z5 !s107 ../../../../XII_breath_led.srcs/sim_1/new/tb_breath_led.v|../../../../XII_breath_led.srcs/sources_1/new/breath_led.v|
+Z6 !s90 -incr|-work|xil_defaultlib|../../../../XII_breath_led.srcs/sources_1/new/breath_led.v|../../../../XII_breath_led.srcs/sim_1/new/tb_breath_led.v|
+!i113 0
+Z7 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vglbl
+Z8 !s110 1754384369
+!i10b 1
+!s100 ZHmTNm_h3dd`6mIQLzSUN3
+R2
+IJT>_:<WW6a7KP^k3<8E3=1
+R0
+w1605673889
+8glbl.v
+Fglbl.v
+!i122 9
+L0 6 78
+R3
+R4
+r1
+!s85 0
+31
+Z9 !s108 1754384369.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+R7
+R1
+vtb_breath_led
+R8
+!i10b 1
+!s100 cScPD<?6V?MBIo5jLU<DC0
+R2
+Il]Hg8OiX6aZ63C73a78O?1
+R0
+w1754384357
+8../../../../XII_breath_led.srcs/sim_1/new/tb_breath_led.v
+F../../../../XII_breath_led.srcs/sim_1/new/tb_breath_led.v
+!i122 8
+L0 22 31
+R3
+R4
+r1
+!s85 0
+31
+R9
+R5
+R6
+!i113 0
+R7
+R1

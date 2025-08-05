@@ -1,7 +1,0 @@
-Running: xsim.dir/breath_led_behav/xsimk.exe -simmode gui -wdb breath_led_behav.wdb -simrunnum 0 -socket 53161
-Design successfully loaded
-Design Loading Memory Usage: 27276 KB (Peak: 27276 KB)
-Design Loading CPU Usage: 983 ms
-Simulation completed
-Simulation Memory Usage: 27964 KB (Peak: 27964 KB)
-Simulation CPU Usage: 1015 ms

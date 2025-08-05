@@ -1,7 +1,7 @@
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version              : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date                      : Sun Aug  3 10:48:47 2025
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version              : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date                      : Tue Aug  5 13:58:35 2025
 | Host                      : DESKTOP-IMB8E6N running 64-bit major release  (build 9200)
 | Command                   : report_io -file run_led_io_placed.rpt
 | Design                    : run_led
@@ -10,7 +10,7 @@ Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanc
 | Package                   : ffvb676
 | Package Version           : PRODUCTION 1.1 3/9/2017
 | Package Pin Delay Version : PRODUCTION 1.0 6/9/2016
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
 IO Information
 
@@ -128,7 +128,7 @@ Table of Contents
 | AC13       |                | High Density     | IO_L5P_HDGC_AD7P_84                | GCLK          |             |      84 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
 | AC14       |                | High Density     | IO_L5N_HDGC_AD7N_84                | GCLK          |             |      84 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
 | AC15       |                | High Density     | VCCO_84                            | VCCO          |             |      84 |            |                         |      |                   |                      |     any** |            |           |          |      |                  |              |                   |              |
-| AC16       | led[0]         | High Performance | IO_T3U_N12_64                      | OUTPUT        | LVCMOS18    |      64 |         12 |                         | SLOW |                   |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
+| AC16       | led[1]         | High Performance | IO_T3U_N12_64                      | OUTPUT        | LVCMOS18    |      64 |         12 |                         | SLOW |                   |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AC17       |                | High Performance | IO_L22N_T3U_N7_DBC_AD0N_64         | User IO       |             |      64 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
 | AC18       |                | High Performance | IO_L16P_T2U_N6_QBC_AD3P_64         | User IO       |             |      64 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
 | AC19       |                | High Performance | IO_L14P_T2L_N2_GC_64               | GCLK          |             |      64 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
@@ -182,7 +182,7 @@ Table of Contents
 | AE15       |                | High Density     | IO_L3N_AD9N_84                     | User IO       |             |      84 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
 | AE16       |                | High Performance | IO_L18N_T2U_N11_AD2N_64            | User IO       |             |      64 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
 | AE17       |                | High Performance | IO_L17P_T2U_N8_AD10P_64            | User IO       |             |      64 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
-| AE18       | led[1]         | High Performance | IO_T2U_N12_64                      | OUTPUT        | LVCMOS18    |      64 |         12 |                         | SLOW |                   |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
+| AE18       | led[0]         | High Performance | IO_T2U_N12_64                      | OUTPUT        | LVCMOS18    |      64 |         12 |                         | SLOW |                   |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AE19       |                |                  | GND                                | GND           |             |         |            |                         |      |                   |                      |       0.0 |            |           |          |      |                  |              |                   |              |
 | AE20       |                | High Performance | IO_L13N_T2L_N1_GC_QBC_64           | GCLK          |             |      64 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
 | AE21       |                | High Performance | IO_L11N_T1U_N9_GC_64               | GCLK          |             |      64 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |

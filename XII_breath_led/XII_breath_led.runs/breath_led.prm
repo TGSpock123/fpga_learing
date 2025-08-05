@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0xC56942E9
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                            Checksum
+0x00000000    0x003A240F    Aug  5 17:32:33 2025    D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.runs/impl_1/breath_led.bit    0x01532ED9
+File Checksum Total                                                                                                                    0x01532ED9
