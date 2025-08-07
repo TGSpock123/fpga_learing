@@ -1,0 +1,23 @@
+# do {tb_simple_fsm_elaborate.do}
+# QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Start time: 23:31:11 on Aug 07,2025
+# vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.tb_simple_fsm xil_defaultlib.glbl -o tb_simple_fsm_opt 
+# 
+# Top level modules:
+# 	tb_simple_fsm
+# 	glbl
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# 
+# Analyzing design...
+# -- Loading module tb_simple_fsm
+# -- Loading module glbl
+# -- Loading module simple_fsm
+# Optimizing 3 design-units (inlining 0/3 module instances):
+# -- Optimizing module simple_fsm(fast)
+# -- Optimizing module tb_simple_fsm(fast)
+# -- Optimizing module glbl(fast)
+# Optimized design name is tb_simple_fsm_opt
+# End time: 23:31:12 on Aug 07,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

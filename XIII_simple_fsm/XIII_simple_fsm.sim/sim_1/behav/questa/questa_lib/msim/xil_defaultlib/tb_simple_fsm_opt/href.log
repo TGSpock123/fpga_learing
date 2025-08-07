@@ -1,0 +1,4 @@
+BEGIN 1:simple_fsm:fast:xil_defaultlib
+    state :  1:tb_simple_fsm:fast:xil_defaultlib
+    in_money :  1:tb_simple_fsm:fast:xil_defaultlib
+END 
