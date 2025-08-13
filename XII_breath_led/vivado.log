@@ -1,211 +1,74 @@
 #-----------------------------------------------------------
-# Vivado v2020.2 (64-bit)
-# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
-# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Aug  5 17:23:40 2025
-# Process ID: 11824
-# Current directory: D:/GitHub/fpga_learing/XII_breath_led
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4656 D:\GitHub\fpga_learing\XII_breath_led\XII_breath_led.xpr
-# Log file: D:/GitHub/fpga_learing/XII_breath_led/vivado.log
-# Journal file: D:/GitHub/fpga_learing/XII_breath_led\vivado.jou
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Aug 13 01:34:07 2025
+# Process ID         : 22248
+# Current directory  : D:/GitHub/fpga_learing/XII_breath_led
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent7952 D:\GitHub\fpga_learing\XII_breath_led\XII_breath_led.xpr
+# Log file           : D:/GitHub/fpga_learing/XII_breath_led/vivado.log
+# Journal file       : D:/GitHub/fpga_learing/XII_breath_led\vivado.jou
+# Running On         : DESKTOP-IMB8E6N
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency      : 2400 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17013 MB
+# Swap memory        : 4386 MB
+# Total Virtual      : 21399 MB
+# Available Virtual  : 4341 MB
 #-----------------------------------------------------------
 start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
 open_project D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.xpr
-WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
+INFO: [Project 1-230] Project 'XII_breath_led.xpr' upgraded for this version of Vivado.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1162.934 ; gain = 0.000
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
 update_compile_order -fileset sources_1
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0
-set_property -dict [list CONFIG.C_PROBE0_WIDTH {2} CONFIG.C_DATA_DEPTH {65536} CONFIG.C_EN_STRG_QUAL {1} CONFIG.C_PROBE0_MU_CNT {2} CONFIG.ALL_PROBE_SAME_MU_CNT {2}] [get_ips ila_0]
-generate_target {instantiation_template} [get_files d:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.srcs/sources_1/ip/ila_0/ila_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
-update_compile_order -fileset sources_1
-generate_target all [get_files  d:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.srcs/sources_1/ip/ila_0/ila_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.gen/sources_1/ip/ila_0/ila_0_ooc.xdc'
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
-INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
-catch { config_ip_cache -export [get_ips -all ila_0] }
-export_ip_user_files -of_objects [get_files d:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] d:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.srcs/sources_1/ip/ila_0/ila_0.xci]
-launch_runs ila_0_synth_1 -jobs 4
-[Tue Aug  5 17:26:57 2025] Launched ila_0_synth_1...
-Run output will be captured here: D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.runs/ila_0_synth_1/runme.log
-export_simulation -of_objects [get_files d:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.srcs/sources_1/ip/ila_0/ila_0.xci] -directory D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.ip_user_files/sim_scripts -ip_user_files_dir D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.ip_user_files -ipstatic_source_dir D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Xilinx/Vivado_Modelsim_Lib} {questa=D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.cache/compile_simlib/questa} {riviera=D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.cache/compile_simlib/riviera} {activehdl=D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-wait_on_run ila_0_synth_1
-[Tue Aug  5 17:27:14 2025] Waiting for ila_0_synth_1 to finish...
-[Tue Aug  5 17:27:19 2025] Waiting for ila_0_synth_1 to finish...
-[Tue Aug  5 17:27:24 2025] Waiting for ila_0_synth_1 to finish...
-[Tue Aug  5 17:27:29 2025] Waiting for ila_0_synth_1 to finish...
-[Tue Aug  5 17:27:39 2025] Waiting for ila_0_synth_1 to finish...
-[Tue Aug  5 17:27:49 2025] Waiting for ila_0_synth_1 to finish...
-[Tue Aug  5 17:27:59 2025] Waiting for ila_0_synth_1 to finish...
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-[Tue Aug  5 17:28:04 2025] Interrupt received
-
-*** Running vivado
-    with args -log ila_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_0.tcl
-
-
-
-****** Vivado v2020.2 (64-bit)
-  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
-  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-source ila_0.tcl -notrace
-Command: synth_design -top ila_0 -part xcku5p-ffvb676-2-i -mode out_of_context
-Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
-INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
-INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21776
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1853.945 ; gain = 169.457
----------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'ila_0' [d:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.gen/sources_1/ip/ila_0/synth/ila_0.v:84]
-INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1524]
-INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (8#1) [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1524]
-INFO: [Synth 8-6157] synthesizing module 'CARRY4' [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1487]
-INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (9#1) [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1487]
-INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78184]
-INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (19#1) [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78184]
-INFO: [Synth 8-6157] synthesizing module 'SRL16E' [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034]
-INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (21#1) [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034]
-INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78123]
-INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (23#1) [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78123]
-INFO: [Synth 8-6157] synthesizing module 'FDRE' [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724]
-INFO: [Synth 8-6155] done synthesizing module 'FDRE' (28#1) [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724]
-wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:50 . Memory (MB): peak = 1236.953 ; gain = 0.000
-INFO: [Common 17-344] 'wait_on_run' was cancelled
-ERROR: [Vivado 12-4146] Open Elaborated Design failed due to the following error:
-ERROR: [Common 17-69] Command failed: 
-
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-export_ip_user_files -of_objects  [get_files d:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -reset -force -quiet
-remove_files  -fileset ila_0 d:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.srcs/sources_1/ip/ila_0/ila_0.xci
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.runs/ila_0_synth_1
-
-INFO: [Project 1-386] Moving file 'd:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.srcs/sources_1/ip/ila_0/ila_0.xci' from fileset 'ila_0' to fileset 'sources_1'.
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
-Starting synth_design
-Using part: xcku5p-ffvb676-2-i
-Top: breath_led
-INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2387.473 ; gain = 151.422
----------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'breath_led' [D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.srcs/sources_1/new/breath_led.v:22]
-	Parameter US_COUNT_MAX bound to: 7'b1100011 
-	Parameter MS_COUNT_MAX bound to: 10'b1111100111 
-	Parameter S_COUNT_MAX bound to: 10'b1111100111 
-INFO: [Synth 8-6155] done synthesizing module 'breath_led' (1#1) [D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.srcs/sources_1/new/breath_led.v:22]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2437.488 ; gain = 201.438
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2455.418 ; gain = 219.367
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2455.418 ; gain = 219.367
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2455.418 ; gain = 0.000
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.srcs/constrs_1/new/breath_led.xdc]
-Finished Parsing XDC File [D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.srcs/constrs_1/new/breath_led.xdc]
-Completed Processing XDC Constraints
-
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2564.910 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:13 . Memory (MB): peak = 2852.082 ; gain = 616.031
-5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 2852.082 ; gain = 1609.070
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Tue Aug  5 17:29:50 2025] Launched synth_1...
-Run output will be captured here: D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.runs/synth_1/runme.log
-[Tue Aug  5 17:29:50 2025] Launched impl_1...
-Run output will be captured here: D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.runs/impl_1/runme.log
-write_cfgmem  -format bin -size 32 -interface SPIx4 -loadbit {up 0x00000000 "D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.runs/impl_1/breath_led.bit" } -checksum -force -disablebitswap -file "D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.runs/breath_led"
-Command: write_cfgmem -format bin -size 32 -interface SPIx4 -loadbit {up 0x00000000 "D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.runs/impl_1/breath_led.bit" } -checksum -force -disablebitswap -file D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.runs/breath_led
-Creating config memory files...
-Creating bitstream load up from address 0x00000000
-Loading bitfile D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.runs/impl_1/breath_led.bit
-Writing file D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.runs/breath_led.bin
-Writing log file D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.runs/breath_led.prm
-===================================
-Configuration Memory information
-===================================
-File Format        BIN
-Interface          SPIX4
-Size               32M
-Start Address      0x00000000
-End Address        0x01FFFFFF
-Checksum           0xC56942E9
-Fill Value         0xFF
-
-Addr1         Addr2         Date                    File(s)                                                                            Checksum
-0x00000000    0x003A240F    Aug  5 17:32:33 2025    D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.runs/impl_1/breath_led.bit    0x01532ED9
-File Checksum Total                                                                                                                    0x01532ED9
-0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
-write_cfgmem completed successfully
 open_hw_manager
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
 INFO: [Labtools 27-2222] Launching hw_server...
 INFO: [Labtools 27-2221] Launch Output:
 
-****** Xilinx hw_server v2020.2
-  **** Build date : Nov 18 2020 at 10:01:48
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
 INFO: [Labtools 27-3417] Launching cs_server...
 INFO: [Labtools 27-2221] Launch Output:
 
 
-******** Xilinx cs_server v2020.2
-  ****** Build date   : Nov 04 2020-05:02:56
-    **** Build number : 2020.2.1604437376
-      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-02:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 4540.629 ; gain = 0.000
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1485.164 ; gain = 3.238
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C306BF52ABCD
 set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.runs/impl_1/breath_led.bit} [get_hw_devices xcku5p_0]
 current_hw_device [get_hw_devices xcku5p_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcku5p_0] 0]
 INFO: [Labtools 27-1434] Device xcku5p (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-create_hw_cfgmem -hw_device [lindex [get_hw_devices xcku5p_0] 0] [lindex [get_cfgmem_parts {mt25qu256-spi-x1_x2_x4}] 0]
-set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
-set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
-set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
-set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
-set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
-refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
-INFO: [Labtools 27-1434] Device xcku5p (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xcku5p_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu256-spi-x1_x2_x4}] 0]
 set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
 set_property PROGRAM.FILES [list "D:/GitHub/fpga_learing/XII_breath_led/XII_breath_led.runs/breath_led.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
 set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xcku5p_0] 0]]
@@ -226,11 +89,11 @@ Erase Operation successful.
 Performing Program and Verify Operations...
 Program/Verify Operation successful.
 INFO: [Labtoolstcl 44-377] Flash programming completed successfully
-program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:01:40 . Memory (MB): peak = 4540.629 ; gain = 0.000
+program_hw_cfgmem: Time (s): cpu = 00:00:02 ; elapsed = 00:01:42 . Memory (MB): peak = 1546.836 ; gain = 13.707
 endgroup
 ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/C306BF52ABCD
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C306BF52ABCD
 INFO: [Labtools 27-1434] Device xcku5p (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Aug  5 17:39:34 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 13 01:41:12 2025...

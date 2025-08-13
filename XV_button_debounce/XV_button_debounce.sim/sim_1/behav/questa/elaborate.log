@@ -1,0 +1,24 @@
+# do {tb_button_debounce_elaborate.do}
+# QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Start time: 13:40:12 on Aug 13,2025
+# vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.tb_button_debounce xil_defaultlib.glbl -o tb_button_debounce_opt 
+# 
+# Top level modules:
+# 	tb_button_debounce
+# 	glbl
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# 
+# Analyzing design...
+# -- Loading module tb_button_debounce
+# -- Loading module glbl
+# -- Loading module button_debounce
+# -- Loading module counter
+# Incremental compilation check found 2 design-units (out of 4) may be reused.
+# Optimizing 2 design-units (inlining 0/4 module instances):
+# -- Optimizing module button_debounce(fast)
+# -- Optimizing module counter(fast)
+# Optimized design name is tb_button_debounce_opt
+# End time: 13:40:12 on Aug 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1

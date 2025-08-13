@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0xC55E6938
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                                         Checksum
+0x00000000    0x003A2ED3    Aug 13 15:55:10 2025    D:/GitHub/fpga_learing/XV_button_debounce/XV_button_debounce.runs/impl_1/button_debounce.bit    0x01530E64
+File Checksum Total                                                                                                                                 0x01530E64

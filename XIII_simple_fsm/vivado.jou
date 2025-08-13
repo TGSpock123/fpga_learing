@@ -3,10 +3,10 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Wed Aug  6 17:32:50 2025
-# Process ID         : 11792
+# Start of session at: Wed Aug 13 01:32:52 2025
+# Process ID         : 21576
 # Current directory  : D:/GitHub/fpga_learing/XIII_simple_fsm
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent8004 D:\GitHub\fpga_learing\XIII_simple_fsm\XIII_simple_fsm.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent7704 D:\GitHub\fpga_learing\XIII_simple_fsm\XIII_simple_fsm.xpr
 # Log file           : D:/GitHub/fpga_learing/XIII_simple_fsm/vivado.log
 # Journal file       : D:/GitHub/fpga_learing/XIII_simple_fsm\vivado.jou
 # Running On         : DESKTOP-IMB8E6N
@@ -17,88 +17,10 @@
 # CPU Physical cores : 4
 # CPU Logical cores  : 8
 # Host memory        : 17013 MB
-# Swap memory        : 2550 MB
-# Total Virtual      : 19563 MB
-# Available Virtual  : 10723 MB
+# Swap memory        : 4386 MB
+# Total Virtual      : 21399 MB
+# Available Virtual  : 4258 MB
 #-----------------------------------------------------------
 start_gui
 open_project D:/GitHub/fpga_learing/XIII_simple_fsm/XIII_simple_fsm.xpr
 update_compile_order -fileset sources_1
-file mkdir D:/GitHub/fpga_learing/XIII_simple_fsm/XIII_simple_fsm.srcs/sim_1/new
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open D:/GitHub/fpga_learing/XIII_simple_fsm/XIII_simple_fsm.srcs/sim_1/new/tb_simple_fsm.v w ]
-add_files -fileset sim_1 D:/GitHub/fpga_learing/XIII_simple_fsm/XIII_simple_fsm.srcs/sim_1/new/tb_simple_fsm.v
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-launch_simulation -install_path D:/questasim64_2024.1/win64
-synth_design -top simple_fsm -part xcku5p-ffvb676-2-i -lint 
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-launch_simulation -install_path D:/questasim64_2024.1/win64
-launch_simulation -install_path D:/questasim64_2024.1/win64
-set_property INCREMENTAL false [get_filesets sim_1]
-launch_simulation -install_path D:/questasim64_2024.1/win64
-launch_simulation -install_path D:/questasim64_2024.1/win64
-set_property compxlib.questa_compiled_library_dir D:/Xilinx/Vivado_Questa_Lib [current_project]
-launch_simulation -install_path D:/questasim64_2024.1/win64
-launch_simulation -install_path D:/questasim64_2024.1/win64 -gcc_install_path C:/Users/tgspo/AppData/Local/Programs/CLion/bin/mingw/bin
-launch_simulation -install_path D:/questasim64_2024.1/win64
-launch_simulation -install_path D:/questasim64_2024.1/win64
-refresh_design
-place_ports clk_sys V23
-set_property IOSTANDARD LVCMOS18 [get_ports [list clk_sys]]
-place_ports rst_sys_n W19
-set_property IOSTANDARD LVCMOS18 [get_ports [list rst_sys_n]]
-place_ports out_cola AC16
-set_property IOSTANDARD LVCMOS18 [get_ports [list out_cola]]
-place_ports in_coin W20
-set_property IOSTANDARD LVCMOS18 [get_ports [list in_coin]]
-file mkdir D:/GitHub/fpga_learing/XIII_simple_fsm/XIII_simple_fsm.srcs/constrs_1/new
-close [ open D:/GitHub/fpga_learing/XIII_simple_fsm/XIII_simple_fsm.srcs/constrs_1/new/simple_fsm.xdc w ]
-add_files -fileset constrs_1 D:/GitHub/fpga_learing/XIII_simple_fsm/XIII_simple_fsm.srcs/constrs_1/new/simple_fsm.xdc
-set_property target_constrs_file D:/GitHub/fpga_learing/XIII_simple_fsm/XIII_simple_fsm.srcs/constrs_1/new/simple_fsm.xdc [current_fileset -constrset]
-save_constraints -force
-refresh_design
-refresh_design
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIII_simple_fsm/XIII_simple_fsm.runs/impl_1/simple_fsm.bit} [get_hw_devices xcku5p_0]
-current_hw_device [get_hw_devices xcku5p_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcku5p_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xcku5p_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xcku5p_0]
-set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIII_simple_fsm/XIII_simple_fsm.runs/impl_1/simple_fsm.bit} [get_hw_devices xcku5p_0]
-program_hw_devices [get_hw_devices xcku5p_0]
-refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
-close_hw_manager
-refresh_design
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIII_simple_fsm/XIII_simple_fsm.runs/impl_1/simple_fsm.bit} [get_hw_devices xcku5p_0]
-current_hw_device [get_hw_devices xcku5p_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcku5p_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xcku5p_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xcku5p_0]
-set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIII_simple_fsm/XIII_simple_fsm.runs/impl_1/simple_fsm.bit} [get_hw_devices xcku5p_0]
-program_hw_devices [get_hw_devices xcku5p_0]
-refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
-close_hw_manager
-refresh_design
-launch_simulation -install_path D:/questasim64_2024.1/win64
-set_property package_pin "" [get_ports [list  out_change]]
-place_ports out_change AE18
-set_property IOSTANDARD LVCMOS18 [get_ports [list out_change]]
-place_ports in_coin_one AA22
-place_ports in_coin_point AB22
-set_property IOSTANDARD LVCMOS18 [get_ports [list in_coin_one]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list in_coin_point]]
-save_constraints
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1

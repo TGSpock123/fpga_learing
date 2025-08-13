@@ -1,0 +1,23 @@
+# do {tb_pwm_generate_elaborate.do}
+# QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Start time: 01:06:53 on Aug 13,2025
+# vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.tb_pwm_generate xil_defaultlib.glbl -o tb_pwm_generate_opt 
+# 
+# Top level modules:
+# 	tb_pwm_generate
+# 	glbl
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# 
+# Analyzing design...
+# -- Loading module tb_pwm_generate
+# -- Loading module glbl
+# -- Loading module pwm_generate
+# -- Loading module counter
+# Incremental compilation check found 4 design-units (out of 5) may be reused.
+# Optimizing 1 design-unit (inlining 0/5 module instances):
+# -- Optimizing module pwm_generate(fast)
+# Optimized design name is tb_pwm_generate_opt
+# End time: 01:06:54 on Aug 13,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

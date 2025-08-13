@@ -1,0 +1,1767 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Aug 12 11:08:08 2025
+# Process ID         : 20392
+# Current directory  : D:/GitHub/fpga_learing/XIV_servo
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent20232 D:\GitHub\fpga_learing\XIV_servo\XIV_servo.xpr
+# Log file           : D:/GitHub/fpga_learing/XIV_servo/vivado.log
+# Journal file       : D:/GitHub/fpga_learing/XIV_servo\vivado.jou
+# Running On         : DESKTOP-IMB8E6N
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency      : 2400 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17013 MB
+# Swap memory        : 2550 MB
+# Total Virtual      : 19563 MB
+# Available Virtual  : 9419 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/GitHub/fpga_learing/XIV_servo/XIV_servo.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.gen/sources_1'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:17 . Memory (MB): peak = 1632.594 ; gain = 410.160
+update_compile_order -fileset sources_1
+launch_simulation -install_path D:/questasim64_2024.1/win64
+Command: launch_simulation  -install_path D:/questasim64_2024.1/win64
+INFO: [Vivado 12-12493] Simulation top is 'top'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'D:/questasim64_2024.1/win64/vsim.exe'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'D:/Xilinx/Vivado_Questa_Lib/modelsim.ini' copied to run dir:'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+CRITICAL WARNING: [SIM-utils-79] Incompatible GCC compiled simulation library found! Library 'D:/Xilinx/Vivado_Questa_Lib' is compiled with GCC version '13.1.0', expected version is '7.4.0'. Please recompile the simulation library or set the correct compiled library path for '7.4.0'.
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {top_compile.do}
+# QuestaSim-64 vmap 2024.1 Lib Mapping Utility 2024.02 Feb  1 2024
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 11:10:19 on Aug 12,2025
+# vlog -incr -mfcu -work xil_defaultlib ../../../../XIV_servo.srcs/sources_1/new/button_debounce.v ../../../../XIV_servo.srcs/sources_1/new/counter.v ../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v ../../../../XIV_servo.srcs/sources_1/new/servo_level.v ../../../../XIV_servo.srcs/sources_1/new/top.v 
+# -- Compiling module button_debounce
+# -- Compiling module counter
+# -- Compiling module pwm_generate
+# -- Compiling module servo_level
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 11:10:19 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 11:10:19 on Aug 12,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 11:10:19 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '3' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {top_elaborate.do}
+# QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Start time: 11:10:21 on Aug 12,2025
+# vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.top xil_defaultlib.glbl -o top_opt 
+# 
+# Top level modules:
+# 	top
+# 	glbl
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading module glbl
+# -- Loading module button_debounce
+# -- Loading module counter
+# -- Loading module servo_level
+# -- Loading module pwm_generate
+# Optimizing 8 design-units (inlining 0/8 module instances):
+# -- Optimizing module button_debounce(fast)
+# -- Optimizing module glbl(fast)
+# -- Optimizing module pwm_generate(fast)
+# -- Optimizing module counter(fast__1)
+# -- Optimizing module counter(fast__2)
+# -- Optimizing module counter(fast)
+# -- Optimizing module servo_level(fast)
+# -- Optimizing module top(fast)
+# Optimized design name is top_opt
+# End time: 11:10:22 on Aug 12,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+INFO: [USF-Questa-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Program launched (PID=6408)
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1655.957 ; gain = 1.160
+launch_simulation -install_path D:/questasim64_2024.1/win64
+Command: launch_simulation  -install_path D:/questasim64_2024.1/win64
+INFO: [Vivado 12-12493] Simulation top is 'top'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'D:/questasim64_2024.1/win64/vsim.exe'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'D:/Xilinx/Vivado_Questa_Lib/modelsim.ini' copied to run dir:'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+CRITICAL WARNING: [SIM-utils-79] Incompatible GCC compiled simulation library found! Library 'D:/Xilinx/Vivado_Questa_Lib' is compiled with GCC version '13.1.0', expected version is '7.4.0'. Please recompile the simulation library or set the correct compiled library path for '7.4.0'.
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {top_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vmap 2024.1 Lib Mapping Utility 2024.02 Feb  1 2024
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 11:12:57 on Aug 12,2025
+# vlog -incr -mfcu -work xil_defaultlib ../../../../XIV_servo.srcs/sources_1/new/button_debounce.v ../../../../XIV_servo.srcs/sources_1/new/counter.v ../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v ../../../../XIV_servo.srcs/sources_1/new/servo_level.v ../../../../XIV_servo.srcs/sources_1/new/top.v 
+# -- Skipping module button_debounce
+# -- Skipping module counter
+# -- Skipping module pwm_generate
+# -- Skipping module servo_level
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 11:12:57 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 11:12:57 on Aug 12,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 11:12:57 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '1' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {top_elaborate.do}
+# QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Start time: 11:12:58 on Aug 12,2025
+# vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.top xil_defaultlib.glbl -o top_opt 
+# 
+# Top level modules:
+# 	top
+# 	glbl
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading module glbl
+# -- Loading module button_debounce
+# -- Loading module counter
+# -- Loading module servo_level
+# -- Loading module pwm_generate
+# Incremental compilation check found 7 design-units (out of 8) may be reused.
+# Optimizing 1 design-unit (inlining 0/8 module instances):
+# -- Optimizing module top(fast)
+# Optimized design name is top_opt
+# End time: 11:12:59 on Aug 12,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+INFO: [USF-Questa-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Program launched (PID=8288)
+synth_design -top top -part xcku5p-ffvb676-2-i -lint 
+Command: synth_design -top top -part xcku5p-ffvb676-2-i -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19868
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2098.957 ; gain = 429.109
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_debounce' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 10 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (1#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-226] default block is never used [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:70]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter_inst'. This will prevent further optimization [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'button_debounce' (2#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'servo_level' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'servo_level' (3#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwm_generate' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 500 - type: integer 
+	Parameter COUNT_MS bound to: 0 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (3#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 20 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (3#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_generate' (4#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (5#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2205.852 ; gain = 536.004
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Aug 12 11:17:25 2025
+| Host         : DESKTOP-IMB8E6N running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++----------+------------------+--------------+----------+
+| Rule ID  | Severity         | # Violations | # Waived |
++----------+------------------+--------------+----------+
+| ASSIGN-7 | CRITICAL WARNING | 1            | 0        |
++----------+------------------+--------------+----------+
+
+
+CRITICAL WARNING: [Synth 37-90] [ASSIGN-7]Multiple assignments detected on array reg_next, first multi-driven bit index is 0.
+RTL Name 'reg_next', Hierarchy 'button_debounce', File 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v', Line 35.
+INFO: [Synth 37-85] Total of 1 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2205.852 ; gain = 536.004
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2205.852 ; gain = 549.895
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xcku5p-ffvb676-2-i
+Top: top
+INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3057.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_debounce' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 10 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-226] default block is never used [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'button_debounce' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'servo_level' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'servo_level' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwm_generate' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 500 - type: integer 
+	Parameter COUNT_MS bound to: 0 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 20 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_generate' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter_inst'. This will prevent further optimization [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:51]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3057.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3057.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3057.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3057.316 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3059.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 3310.020 ; gain = 252.703
+20 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 3310.020 ; gain = 1104.168
+add_files -norecurse {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v}
+WARNING: [filemgmt 56-12] File 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v' cannot be added to the project because it already exists in the project, skipping this file
+file mkdir D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1
+file mkdir D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new
+close [ open D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc w ]
+add_files -fileset constrs_1 D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+Finished Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+Completed Processing XDC Constraints
+
+place_ports rst_sys_n W19
+place_ports in_button W20
+place_ports clk_sys V23
+set_property IOSTANDARD LVCMOS18 [get_ports [list clk_sys]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list in_button]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list out_servo]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list rst_sys_n]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list out_servo]]
+place_ports out_servo AB22
+set_property IOSTANDARD LVCMOS18 [get_ports [list out_servo]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list out_servo]]
+place_ports out_servo AA22
+place_ports out_servo AB22
+set_property IOSTANDARD LVCMOS33 [get_ports [list out_servo]]
+set_property IOSTANDARD HSTL_I_12 [get_ports [list out_servo]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list out_servo]]
+set_property IOSTANDARD LVCMOS25 [get_ports [list out_servo]]
+set_property IOSTANDARD LVCMOS25 [get_ports [list out_servo]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list out_servo]]
+set_property target_constrs_file D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc [current_fileset -constrset]
+save_constraints -force
+set_property IOSTANDARD k [get_ports [list out_servo]]
+ERROR: [Common 17-69] Command failed: Invalid I/O Standard 'k'
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xcku5p-ffvb676-2-i
+Top: top
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3852.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_debounce' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 10 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-226] default block is never used [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'button_debounce' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'servo_level' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'servo_level' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwm_generate' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 500 - type: integer 
+	Parameter COUNT_MS bound to: 0 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 20 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_generate' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter_inst'. This will prevent further optimization [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:51]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3852.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3852.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3852.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3852.555 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+Finished Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3852.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3862.699 ; gain = 10.145
+19 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3862.699 ; gain = 10.145
+launch_simulation -install_path D:/questasim64_2024.1/win64
+Command: launch_simulation  -install_path D:/questasim64_2024.1/win64
+INFO: [Vivado 12-12493] Simulation top is 'top'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'D:/questasim64_2024.1/win64/vsim.exe'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'D:/Xilinx/Vivado_Questa_Lib/modelsim.ini' copied to run dir:'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+CRITICAL WARNING: [SIM-utils-79] Incompatible GCC compiled simulation library found! Library 'D:/Xilinx/Vivado_Questa_Lib' is compiled with GCC version '13.1.0', expected version is '7.4.0'. Please recompile the simulation library or set the correct compiled library path for '7.4.0'.
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {top_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vmap 2024.1 Lib Mapping Utility 2024.02 Feb  1 2024
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:19:18 on Aug 12,2025
+# vlog -incr -mfcu -work xil_defaultlib ../../../../XIV_servo.srcs/sources_1/new/button_debounce.v ../../../../XIV_servo.srcs/sources_1/new/counter.v ../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v ../../../../XIV_servo.srcs/sources_1/new/servo_level.v ../../../../XIV_servo.srcs/sources_1/new/top.v 
+# -- Skipping module button_debounce
+# -- Skipping module counter
+# -- Skipping module pwm_generate
+# -- Skipping module servo_level
+# -- Skipping module top
+# 
+# Top level modules:
+# 	top
+# End time: 20:19:18 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:19:18 on Aug 12,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 20:19:18 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '3' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {top_elaborate.do}
+# QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Start time: 20:19:20 on Aug 12,2025
+# vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.top xil_defaultlib.glbl -o top_opt 
+# 
+# Top level modules:
+# 	top
+# 	glbl
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading module glbl
+# -- Loading module button_debounce
+# -- Loading module counter
+# -- Loading module servo_level
+# -- Loading module pwm_generate
+# Incremental compilation check found no design-units have changed.
+# Optimized design name is top_opt
+# End time: 20:19:20 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+INFO: [USF-Questa-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Program launched (PID=22064)
+launch_simulation -install_path D:/questasim64_2024.1/win64
+Command: launch_simulation  -install_path D:/questasim64_2024.1/win64
+INFO: [Vivado 12-12493] Simulation top is 'top'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'D:/questasim64_2024.1/win64/vsim.exe'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'D:/Xilinx/Vivado_Questa_Lib/modelsim.ini' copied to run dir:'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+CRITICAL WARNING: [SIM-utils-79] Incompatible GCC compiled simulation library found! Library 'D:/Xilinx/Vivado_Questa_Lib' is compiled with GCC version '13.1.0', expected version is '7.4.0'. Please recompile the simulation library or set the correct compiled library path for '7.4.0'.
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {top_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vmap 2024.1 Lib Mapping Utility 2024.02 Feb  1 2024
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:29:48 on Aug 12,2025
+# vlog -incr -mfcu -work xil_defaultlib ../../../../XIV_servo.srcs/sources_1/new/button_debounce.v ../../../../XIV_servo.srcs/sources_1/new/counter.v ../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v ../../../../XIV_servo.srcs/sources_1/new/servo_level.v ../../../../XIV_servo.srcs/sources_1/new/top.v 
+# -- Skipping module button_debounce
+# -- Skipping module counter
+# -- Skipping module pwm_generate
+# -- Skipping module servo_level
+# -- Skipping module top
+# 
+# Top level modules:
+# 	top
+# End time: 20:29:48 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:29:48 on Aug 12,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 20:29:48 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '1' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {top_elaborate.do}
+# QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Start time: 20:29:49 on Aug 12,2025
+# vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.top xil_defaultlib.glbl -o top_opt 
+# 
+# Top level modules:
+# 	top
+# 	glbl
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading module glbl
+# -- Loading module button_debounce
+# -- Loading module counter
+# -- Loading module servo_level
+# -- Loading module pwm_generate
+# Incremental compilation check found no design-units have changed.
+# Optimized design name is top_opt
+# End time: 20:29:49 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+INFO: [USF-Questa-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Program launched (PID=4952)
+launch_simulation -install_path D:/questasim64_2024.1/win64
+Command: launch_simulation  -install_path D:/questasim64_2024.1/win64
+INFO: [Vivado 12-12493] Simulation top is 'top'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'D:/questasim64_2024.1/win64/vsim.exe'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'D:/Xilinx/Vivado_Questa_Lib/modelsim.ini' copied to run dir:'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+CRITICAL WARNING: [SIM-utils-79] Incompatible GCC compiled simulation library found! Library 'D:/Xilinx/Vivado_Questa_Lib' is compiled with GCC version '13.1.0', expected version is '7.4.0'. Please recompile the simulation library or set the correct compiled library path for '7.4.0'.
+INFO: [SIM-utils-54] Inspecting design source files for 'top' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {top_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vmap 2024.1 Lib Mapping Utility 2024.02 Feb  1 2024
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:34:26 on Aug 12,2025
+# vlog -incr -mfcu -work xil_defaultlib ../../../../XIV_servo.srcs/sources_1/new/button_debounce.v ../../../../XIV_servo.srcs/sources_1/new/counter.v ../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v ../../../../XIV_servo.srcs/sources_1/new/servo_level.v ../../../../XIV_servo.srcs/sources_1/new/top.v 
+# -- Skipping module button_debounce
+# -- Skipping module counter
+# -- Skipping module pwm_generate
+# -- Skipping module servo_level
+# -- Skipping module top
+# 
+# Top level modules:
+# 	top
+# End time: 20:34:26 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 20:34:26 on Aug 12,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 20:34:26 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '2' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {top_elaborate.do}
+# QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Start time: 20:34:27 on Aug 12,2025
+# vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.top xil_defaultlib.glbl -o top_opt 
+# 
+# Top level modules:
+# 	top
+# 	glbl
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading module glbl
+# -- Loading module button_debounce
+# -- Loading module counter
+# -- Loading module servo_level
+# -- Loading module pwm_generate
+# Incremental compilation check found no design-units have changed.
+# Optimized design name is top_opt
+# End time: 20:34:28 on Aug 12,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+INFO: [USF-Questa-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Program launched (PID=21512)
+set_property top tb_pwm_generate [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+refresh_design
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3965.578 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_debounce' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 10 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-226] default block is never used [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'button_debounce' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'servo_level' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'servo_level' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwm_generate' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 500 - type: integer 
+	Parameter COUNT_MS bound to: 0 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 20 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_generate' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter_inst'. This will prevent further optimization [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:51]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3965.578 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3965.578 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3965.578 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3965.578 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+Finished Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3965.578 ; gain = 0.000
+launch_simulation -install_path D:/questasim64_2024.1/win64
+Command: launch_simulation  -install_path D:/questasim64_2024.1/win64
+INFO: [Vivado 12-12493] Simulation top is 'tb_pwm_generate'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'D:/questasim64_2024.1/win64/vsim.exe'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'D:/Xilinx/Vivado_Questa_Lib/modelsim.ini' copied to run dir:'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+CRITICAL WARNING: [SIM-utils-79] Incompatible GCC compiled simulation library found! Library 'D:/Xilinx/Vivado_Questa_Lib' is compiled with GCC version '13.1.0', expected version is '7.4.0'. Please recompile the simulation library or set the correct compiled library path for '7.4.0'.
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pwm_generate' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {tb_pwm_generate_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vmap 2024.1 Lib Mapping Utility 2024.02 Feb  1 2024
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 21:02:42 on Aug 12,2025
+# vlog -incr -mfcu -work xil_defaultlib ../../../../XIV_servo.srcs/sources_1/new/counter.v ../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v ../../../../XIV_servo.srcs/sim_1/new/tb_pwm_generate.v 
+# -- Skipping module counter
+# -- Compiling module pwm_generate
+# -- Compiling module tb_pwm_generate
+# 
+# Top level modules:
+# 	tb_pwm_generate
+# End time: 21:02:42 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 21:02:42 on Aug 12,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 21:02:42 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '2' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {tb_pwm_generate_elaborate.do}
+# QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Start time: 21:02:43 on Aug 12,2025
+# vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.tb_pwm_generate xil_defaultlib.glbl -o tb_pwm_generate_opt 
+# 
+# Top level modules:
+# 	tb_pwm_generate
+# 	glbl
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# 
+# Analyzing design...
+# -- Loading module tb_pwm_generate
+# -- Loading module glbl
+# -- Loading module pwm_generate
+# -- Loading module counter
+# Optimizing 5 design-units (inlining 0/5 module instances):
+# -- Optimizing module glbl(fast)
+# -- Optimizing module counter(fast__1)
+# -- Optimizing module counter(fast)
+# -- Optimizing module pwm_generate(fast)
+# -- Optimizing module tb_pwm_generate(fast)
+# Optimized design name is tb_pwm_generate_opt
+# End time: 21:02:44 on Aug 12,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+INFO: [USF-Questa-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Program launched (PID=10156)
+refresh_design
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3965.578 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_debounce' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 10 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-226] default block is never used [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'button_debounce' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'servo_level' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'servo_level' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwm_generate' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 500 - type: integer 
+	Parameter COUNT_MS bound to: 0 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 20 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_generate' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter_inst'. This will prevent further optimization [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:51]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3965.578 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3965.578 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3965.578 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3965.578 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+Finished Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 4006.695 ; gain = 41.117
+launch_simulation -install_path D:/questasim64_2024.1/win64
+Command: launch_simulation  -install_path D:/questasim64_2024.1/win64
+INFO: [Vivado 12-12493] Simulation top is 'tb_pwm_generate'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'D:/questasim64_2024.1/win64/vsim.exe'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'D:/Xilinx/Vivado_Questa_Lib/modelsim.ini' copied to run dir:'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+CRITICAL WARNING: [SIM-utils-79] Incompatible GCC compiled simulation library found! Library 'D:/Xilinx/Vivado_Questa_Lib' is compiled with GCC version '13.1.0', expected version is '7.4.0'. Please recompile the simulation library or set the correct compiled library path for '7.4.0'.
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pwm_generate' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {tb_pwm_generate_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vmap 2024.1 Lib Mapping Utility 2024.02 Feb  1 2024
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 21:06:15 on Aug 12,2025
+# vlog -incr -mfcu -work xil_defaultlib ../../../../XIV_servo.srcs/sources_1/new/counter.v ../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v ../../../../XIV_servo.srcs/sim_1/new/tb_pwm_generate.v 
+# -- Skipping module counter
+# -- Compiling module pwm_generate
+# -- Skipping module tb_pwm_generate
+# 
+# Top level modules:
+# 	tb_pwm_generate
+# End time: 21:06:15 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 21:06:15 on Aug 12,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 21:06:15 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '2' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {tb_pwm_generate_elaborate.do}
+# QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Start time: 21:06:17 on Aug 12,2025
+# vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.tb_pwm_generate xil_defaultlib.glbl -o tb_pwm_generate_opt 
+# 
+# Top level modules:
+# 	tb_pwm_generate
+# 	glbl
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# 
+# Analyzing design...
+# -- Loading module tb_pwm_generate
+# -- Loading module glbl
+# -- Loading module pwm_generate
+# -- Loading module counter
+# Incremental compilation check found 4 design-units (out of 5) may be reused.
+# Optimizing 1 design-unit (inlining 0/5 module instances):
+# -- Optimizing module pwm_generate(fast)
+# Optimized design name is tb_pwm_generate_opt
+# End time: 21:06:17 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+INFO: [USF-Questa-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Program launched (PID=13204)
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4069.266 ; gain = 0.000
+WARNING: [Vivado 12-584] No ports matched 'out_change'. [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_change'. [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in_coin_one'. [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in_coin_point'. [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in_coin_one'. [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in_coin_point'. [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 4069.266 ; gain = 9.145
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+Finished Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 4069.266 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 12 21:44:56 2025] Launched synth_1...
+Run output will be captured here: D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/synth_1/runme.log
+[Tue Aug 12 21:44:56 2025] Launched impl_1...
+Run output will be captured here: D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/runme.log
+synth_design -top top -part xcku5p-ffvb676-2-i -lint 
+Command: synth_design -top top -part xcku5p-ffvb676-2-i -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_debounce' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 10 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (1#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-226] default block is never used [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:70]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter_inst'. This will prevent further optimization [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'button_debounce' (2#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'servo_level' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'servo_level' (3#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwm_generate' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 500 - type: integer 
+	Parameter COUNT_MS bound to: 0 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (3#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 20 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (3#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_generate' (4#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (5#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Aug 13 01:00:38 2025
+| Host         : DESKTOP-IMB8E6N running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++----------+------------------+--------------+----------+
+| Rule ID  | Severity         | # Violations | # Waived |
++----------+------------------+--------------+----------+
+| ASSIGN-7 | CRITICAL WARNING | 1            | 0        |
++----------+------------------+--------------+----------+
+
+
+CRITICAL WARNING: [Synth 37-90] [ASSIGN-7]Multiple assignments detected on array reg_next, first multi-driven bit index is 0.
+RTL Name 'reg_next', Hierarchy 'button_debounce', File 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v', Line 35.
+INFO: [Synth 37-85] Total of 1 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+refresh_design
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_debounce' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 10 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-226] default block is never used [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'button_debounce' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'servo_level' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'servo_level' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwm_generate' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 500 - type: integer 
+	Parameter COUNT_MS bound to: 0 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 20 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_generate' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter_inst'. This will prevent further optimization [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:51]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4069.266 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4069.266 ; gain = 0.000
+Finished Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 4069.266 ; gain = 0.000
+synth_design -top top -part xcku5p-ffvb676-2-i -lint 
+Command: synth_design -top top -part xcku5p-ffvb676-2-i -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_debounce' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 10 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (1#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-226] default block is never used [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:70]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter_inst'. This will prevent further optimization [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'button_debounce' (2#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'servo_level' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'servo_level' (3#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwm_generate' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 500 - type: integer 
+	Parameter COUNT_MS bound to: 0 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (3#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 20 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (3#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_generate' (4#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (5#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Aug 13 01:04:33 2025
+| Host         : DESKTOP-IMB8E6N running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++----------+------------------+--------------+----------+
+| Rule ID  | Severity         | # Violations | # Waived |
++----------+------------------+--------------+----------+
+| ASSIGN-7 | CRITICAL WARNING | 1            | 0        |
++----------+------------------+--------------+----------+
+
+
+CRITICAL WARNING: [Synth 37-90] [ASSIGN-7]Multiple assignments detected on array reg_next, first multi-driven bit index is 0.
+RTL Name 'reg_next', Hierarchy 'button_debounce', File 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v', Line 35.
+INFO: [Synth 37-85] Total of 1 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 4069.266 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 4069.266 ; gain = 0.000
+launch_simulation -install_path D:/questasim64_2024.1/win64
+Command: launch_simulation  -install_path D:/questasim64_2024.1/win64
+INFO: [Vivado 12-12493] Simulation top is 'tb_pwm_generate'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'D:/questasim64_2024.1/win64/vsim.exe'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'D:/Xilinx/Vivado_Questa_Lib/modelsim.ini' copied to run dir:'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+CRITICAL WARNING: [SIM-utils-79] Incompatible GCC compiled simulation library found! Library 'D:/Xilinx/Vivado_Questa_Lib' is compiled with GCC version '13.1.0', expected version is '7.4.0'. Please recompile the simulation library or set the correct compiled library path for '7.4.0'.
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pwm_generate' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {tb_pwm_generate_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vmap 2024.1 Lib Mapping Utility 2024.02 Feb  1 2024
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 01:06:51 on Aug 13,2025
+# vlog -incr -mfcu -work xil_defaultlib ../../../../XIV_servo.srcs/sources_1/new/counter.v ../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v ../../../../XIV_servo.srcs/sim_1/new/tb_pwm_generate.v 
+# -- Skipping module counter
+# -- Compiling module pwm_generate
+# -- Skipping module tb_pwm_generate
+# 
+# Top level modules:
+# 	tb_pwm_generate
+# End time: 01:06:52 on Aug 13,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 01:06:52 on Aug 13,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 01:06:52 on Aug 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '2' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Reading pref.tcl
+
+# 2024.1
+
+# do {tb_pwm_generate_elaborate.do}
+# QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Start time: 01:06:53 on Aug 13,2025
+# vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.tb_pwm_generate xil_defaultlib.glbl -o tb_pwm_generate_opt 
+# 
+# Top level modules:
+# 	tb_pwm_generate
+# 	glbl
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# 
+# Analyzing design...
+# -- Loading module tb_pwm_generate
+# -- Loading module glbl
+# -- Loading module pwm_generate
+# -- Loading module counter
+# Incremental compilation check found 4 design-units (out of 5) may be reused.
+# Optimizing 1 design-unit (inlining 0/5 module instances):
+# -- Optimizing module pwm_generate(fast)
+# Optimized design name is tb_pwm_generate_opt
+# End time: 01:06:54 on Aug 13,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+INFO: [USF-Questa-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa'
+Program launched (PID=9712)
+set_property top tb_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+synth_design -top top -part xcku5p-ffvb676-2-i -lint 
+Command: synth_design -top top -part xcku5p-ffvb676-2-i -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_debounce' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 10 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (1#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-226] default block is never used [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:70]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter_inst'. This will prevent further optimization [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'button_debounce' (2#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'servo_level' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'servo_level' (3#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwm_generate' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 500 - type: integer 
+	Parameter COUNT_MS bound to: 0 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (3#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 20 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (3#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_generate' (4#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (5#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Aug 13 01:08:47 2025
+| Host         : DESKTOP-IMB8E6N running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++----------+------------------+--------------+----------+
+| Rule ID  | Severity         | # Violations | # Waived |
++----------+------------------+--------------+----------+
+| ASSIGN-7 | CRITICAL WARNING | 1            | 0        |
++----------+------------------+--------------+----------+
+
+
+CRITICAL WARNING: [Synth 37-90] [ASSIGN-7]Multiple assignments detected on array reg_next, first multi-driven bit index is 0.
+RTL Name 'reg_next', Hierarchy 'button_debounce', File 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v', Line 35.
+INFO: [Synth 37-85] Total of 1 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+update_compile_order -fileset sim_1
+synth_design -top top -part xcku5p-ffvb676-2-i -lint 
+Command: synth_design -top top -part xcku5p-ffvb676-2-i -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_debounce' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 10 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (1#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-226] default block is never used [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:70]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter_inst'. This will prevent further optimization [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'button_debounce' (2#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'servo_level' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'servo_level' (3#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwm_generate' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 500 - type: integer 
+	Parameter COUNT_MS bound to: 0 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (3#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 20 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (3#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_generate' (4#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (5#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Aug 13 01:09:02 2025
+| Host         : DESKTOP-IMB8E6N running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++----------+------------------+--------------+----------+
+| Rule ID  | Severity         | # Violations | # Waived |
++----------+------------------+--------------+----------+
+| ASSIGN-7 | CRITICAL WARNING | 1            | 0        |
++----------+------------------+--------------+----------+
+
+
+CRITICAL WARNING: [Synth 37-90] [ASSIGN-7]Multiple assignments detected on array reg_next, first multi-driven bit index is 0.
+RTL Name 'reg_next', Hierarchy 'button_debounce', File 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v', Line 35.
+INFO: [Synth 37-85] Total of 1 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+refresh_design
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_debounce' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 10 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-226] default block is never used [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'button_debounce' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'servo_level' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'servo_level' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwm_generate' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 500 - type: integer 
+	Parameter COUNT_MS bound to: 0 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 20 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_generate' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter_inst'. This will prevent further optimization [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:51]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4069.266 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4069.266 ; gain = 0.000
+Finished Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 4069.266 ; gain = 0.000
+refresh_design
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_debounce' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 10 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-226] default block is never used [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'button_debounce' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'servo_level' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'servo_level' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwm_generate' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 500 - type: integer 
+	Parameter COUNT_MS bound to: 0 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 20 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_generate' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter_inst'. This will prevent further optimization [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:51]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4069.266 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4069.266 ; gain = 0.000
+Finished Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 4069.266 ; gain = 0.000
+refresh_design
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_debounce' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 10 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-226] default block is never used [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'button_debounce' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
+INFO: [Synth 8-6157] synthesizing module 'servo_level' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'servo_level' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwm_generate' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 500 - type: integer 
+	Parameter COUNT_MS bound to: 0 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+	Parameter CLK_FREQUENCY_MHZ bound to: 100 - type: integer 
+	Parameter COUNT_10_NS bound to: 0 - type: integer 
+	Parameter COUNT_US bound to: 0 - type: integer 
+	Parameter COUNT_MS bound to: 20 - type: integer 
+	Parameter COUNT_S bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_generate' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter_inst'. This will prevent further optimization [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:51]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4069.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4069.266 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4069.266 ; gain = 0.000
+Finished Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 4069.266 ; gain = 0.000
+reset_run synth_1
+INFO: [Project 1-1160] Copying file D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/synth_1/top.dcp to D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 13 01:20:56 2025] Launched synth_1...
+Run output will be captured here: D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/synth_1/runme.log
+[Wed Aug 13 01:20:56 2025] Launched impl_1...
+Run output will be captured here: D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-02:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 4069.266 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C306BF52ABCD
+set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/top.bit} [get_hw_devices xcku5p_0]
+current_hw_device [get_hw_devices xcku5p_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcku5p_0] 0]
+INFO: [Labtools 27-1434] Device xcku5p (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/top.bit} [get_hw_devices xcku5p_0]
+program_hw_devices [get_hw_devices xcku5p_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+INFO: [Labtools 27-1434] Device xcku5p (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/C306BF52ABCD
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C306BF52ABCD
+INFO: [Labtools 27-1435] Device xcku5p (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/C306BF52ABCD
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/C306BF52ABCD
+INFO: [Labtools 27-1435] Device xcku5p (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/C306BF52ABCD
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 13 01:41:13 2025...

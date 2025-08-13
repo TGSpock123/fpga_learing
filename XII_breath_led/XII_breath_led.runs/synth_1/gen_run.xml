@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-i" LaunchTime="1754386190">
-  <File Type="PA-TCL" Name="breath_led.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="breath_led_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="breath_led_reports.tcl"/>
-  <File Type="RDS-RDS" Name="breath_led.vds"/>
   <File Type="RDS-UTIL" Name="breath_led_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="breath_led_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="breath_led.tcl"/>
+  <File Type="RDS-RDS" Name="breath_led.vds"/>
   <File Type="RDS-DCP" Name="breath_led.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="breath_led_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="breath_led_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/breath_led.v">
