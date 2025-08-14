@@ -12,13 +12,17 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-# do {tb_pwm_generate_simulate.do}
-# vsim -lib xil_defaultlib tb_pwm_generate_opt 
-# Start time: 01:07:03 on Aug 13,2025
-# Loading work.tb_pwm_generate(fast)
-# Loading work.pwm_generate(fast)
+# do {tb_top_simulate.do}
+# vsim -lib xil_defaultlib tb_top_opt 
+# Start time: 18:31:38 on Aug 13,2025
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading work.button_debounce(fast)
 # Loading work.counter(fast)
+# Loading work.servo_level(fast)
+# Loading work.pwm_generate(fast)
 # Loading work.counter(fast__1)
+# Loading work.counter(fast__2)
 # Loading work.glbl(fast)
 # 1
 # 1
@@ -26,13 +30,5 @@
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 run
-restart
-# Loading work.tb_pwm_generate(fast)
-# Loading work.pwm_generate(fast)
-# Loading work.counter(fast)
-# Loading work.counter(fast__1)
-# Loading work.glbl(fast)
-run
-run
-# End time: 01:08:23 on Aug 13,2025, Elapsed time: 0:01:20
+# End time: 18:32:52 on Aug 13,2025, Elapsed time: 0:01:14
 # Errors: 0, Warnings: 0

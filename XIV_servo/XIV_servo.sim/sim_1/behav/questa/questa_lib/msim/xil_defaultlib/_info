@@ -2,13 +2,6 @@ m255
 K4
 z2
 Z0 !s99 nomlopt
-R0
-R0
-R0
-R0
-R0
-R0
-R0
 !s11f vlog 2024.1 2024.02, Feb  1 2024
 13
 !s112 1.1
@@ -18,32 +11,30 @@ R0
 cModel Technology
 Z1 dD:/GitHub/fpga_learing/XIV_servo/XIV_servo.sim/sim_1/behav/questa
 vbutton_debounce
-Z2 2../../../../XIV_servo.srcs/sources_1/new/button_debounce.v|../../../../XIV_servo.srcs/sources_1/new/counter.v|../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v|../../../../XIV_servo.srcs/sources_1/new/servo_level.v|../../../../XIV_servo.srcs/sources_1/new/top.v
-!s10a 1754906037
-Z3 !s110 1754968219
+Z2 2../../../../XIV_servo.srcs/sources_1/new/button_debounce.v|../../../../XIV_servo.srcs/sources_1/new/counter.v|../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v|../../../../XIV_servo.srcs/sources_1/new/servo_level.v|../../../../XIV_servo.srcs/sources_1/new/top.v|../../../../XIV_servo.srcs/sim_1/new/tb_top.v
+Z3 !s110 1755081090
 !i10b 1
-!s100 2JJ64;i?6VDQdG@RMYTTc2
-IbebF:_G2`kJUMC:oGj?Wb2
+!s100 a6_jMX1S_V9gI<c[PDRJk2
+IXK7?zDm;=IWEGkBS`hN_P0
 R1
-w1754906037
+w1755080079
 8../../../../XIV_servo.srcs/sources_1/new/button_debounce.v
 F../../../../XIV_servo.srcs/sources_1/new/button_debounce.v
 !i122 0
-L0 22 108
+L0 22 112
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 Z5 OL;L;2024.1;79
 r1
 !s85 0
 31
-Z6 !s108 1754968219.000000
-Z7 !s107 ../../../../XIV_servo.srcs/sources_1/new/top.v|../../../../XIV_servo.srcs/sources_1/new/servo_level.v|../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v|../../../../XIV_servo.srcs/sources_1/new/counter.v|../../../../XIV_servo.srcs/sources_1/new/button_debounce.v|
-Z8 !s90 -incr|-mfcu|-work|xil_defaultlib|../../../../XIV_servo.srcs/sources_1/new/button_debounce.v|../../../../XIV_servo.srcs/sources_1/new/counter.v|../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v|../../../../XIV_servo.srcs/sources_1/new/servo_level.v|../../../../XIV_servo.srcs/sources_1/new/top.v|
+Z6 !s108 1755081090.000000
+Z7 !s107 ../../../../XIV_servo.srcs/sim_1/new/tb_top.v|../../../../XIV_servo.srcs/sources_1/new/top.v|../../../../XIV_servo.srcs/sources_1/new/servo_level.v|../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v|../../../../XIV_servo.srcs/sources_1/new/counter.v|../../../../XIV_servo.srcs/sources_1/new/button_debounce.v|
+Z8 !s90 -incr|-mfcu|-work|xil_defaultlib|../../../../XIV_servo.srcs/sources_1/new/button_debounce.v|../../../../XIV_servo.srcs/sources_1/new/counter.v|../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v|../../../../XIV_servo.srcs/sources_1/new/servo_level.v|../../../../XIV_servo.srcs/sources_1/new/top.v|../../../../XIV_servo.srcs/sim_1/new/tb_top.v|
 !i113 0
 Z9 o-mfcu -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Z10 tCvgOpt 0
 vcounter
-Z11 2../../../../XIV_servo.srcs/sources_1/new/counter.v|../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v|../../../../XIV_servo.srcs/sim_1/new/tb_pwm_generate.v
-!s10a 1754906055
+R2
 R3
 !i10b 1
 !s100 ]FV3?dYE[ZWAT1T6f2UiA3
@@ -67,7 +58,7 @@ R9
 R10
 vglbl
 2glbl.v
-Z12 !s110 1755018412
+R3
 !i10b 1
 !s100 TL<1YD8i05Z]RjCH=O^Cf3
 IEIl9nCH7KnQHNU=hnG=VH2
@@ -75,22 +66,22 @@ R1
 w1724786425
 8glbl.v
 Fglbl.v
-!i122 12
+!i122 1
 L0 6 78
 R4
 R5
 r1
 !s85 0
 31
-!s108 1755018412.000000
+R6
 !s107 glbl.v|
 !s90 -work|xil_defaultlib|glbl.v|
 !i113 0
 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R10
 vpwm_generate
-R11
-R12
+R2
+R3
 !i10b 1
 !s100 GcLZiYf@[3YF;3ND0T4H50
 INVA5LVFY@;8lgN:z;b<Od2
@@ -98,22 +89,21 @@ R1
 w1755017983
 8../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v
 F../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v
-!i122 11
+!i122 0
 L0 23 66
 R4
 R5
 r1
 !s85 0
 31
-!s108 1755018411.000000
-Z13 !s107 ../../../../XIV_servo.srcs/sim_1/new/tb_pwm_generate.v|../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v|../../../../XIV_servo.srcs/sources_1/new/counter.v|
-Z14 !s90 -incr|-mfcu|-work|xil_defaultlib|../../../../XIV_servo.srcs/sources_1/new/counter.v|../../../../XIV_servo.srcs/sources_1/new/pwm_generate.v|../../../../XIV_servo.srcs/sim_1/new/tb_pwm_generate.v|
+R6
+R7
+R8
 !i113 0
 R9
 R10
 vservo_level
 R2
-!s10a 1754900286
 R3
 !i10b 1
 !s100 l?><AUWmM[:BzLzVPg>W53
@@ -135,78 +125,62 @@ R8
 !i113 0
 R9
 R10
-vtb_pwm_generate
-R11
-!s10a 1754903588
-!s110 1755003762
+vtb_top
+R2
+R3
 !i10b 1
-!s100 g1ROiGK=ZVP_jTHR26B:U3
-IW7[9G_8?b;IVRMh7_edL90
+!s100 `1Qh<_f[DaXi:HDKIHo<V2
+IA]d6fI09gNn3zoXomVVS41
 R1
-w1754903588
-8../../../../XIV_servo.srcs/sim_1/new/tb_pwm_generate.v
-F../../../../XIV_servo.srcs/sim_1/new/tb_pwm_generate.v
-!i122 7
-L0 23 37
+w1755080904
+8../../../../XIV_servo.srcs/sim_1/new/tb_top.v
+F../../../../XIV_servo.srcs/sim_1/new/tb_top.v
+!i122 0
+L0 23 42
 R4
 R5
 r1
 !s85 0
 31
-!s108 1755003762.000000
-R13
-R14
+R6
+R7
+R8
 !i113 0
 R9
 R10
-Ttb_pwm_generate_opt
-!s110 1755018414
-VC?X@3>[>m625`H>;?FiTU3
-04 15 4 work tb_pwm_generate fast 0
-Z15 04 4 4 work glbl fast 0
+Ttb_top_opt
+!s110 1755081092
+V8Rk]o=eZYE1D64olF]gh`3
+04 6 4 work tb_top fast 0
+04 4 4 work glbl fast 0
 R0
-Z16 !s12f OEM100
-Z17 !s12b OEM100
-Z18 !s124 OEM100
-Z19 o-suppress 10016 +acc=npr -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+o-suppress 10016 +acc=npr -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib
 R10
-ntb_pwm_generate_opt
-Z20 OL;O;2024.1;79
+ntb_top_opt
+OL;O;2024.1;79
 vtop
 R2
-!s10a 1754968358
-!s110 1754968377
+R3
 !i10b 1
 !s100 gOg2f>cnao77AAgF`><`00
 I3z^nM@z=Qz812@@O`M2ab2
 R1
-w1754968358
+w1755080982
 8../../../../XIV_servo.srcs/sources_1/new/top.v
 F../../../../XIV_servo.srcs/sources_1/new/top.v
-!i122 2
+!i122 0
 L0 23 36
 R4
 R5
 r1
 !s85 0
 31
-!s108 1754968377.000000
+R6
 R7
 R8
 !i113 0
 R9
 R10
-Ttop_opt
-!s110 1755002067
-V0gzmhUT>MhGch::DT>Zl92
-04 3 4 work top fast 0
-R15
-R0
-R16
-R17
-R18
-R19
-R10
-ntop_opt
-R20
-R1

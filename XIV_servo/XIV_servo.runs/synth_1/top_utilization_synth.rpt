@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Wed Aug 13 01:22:24 2025
+| Date         : Thu Aug 14 10:45:25 2025
 | Host         : DESKTOP-IMB8E6N running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
@@ -32,8 +32,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs*               |   69 |     0 |          0 |    216960 |  0.03 |
-|   LUT as Logic          |   69 |     0 |          0 |    216960 |  0.03 |
+| CLB LUTs*               |   70 |     0 |          0 |    216960 |  0.03 |
+|   LUT as Logic          |   70 |     0 |          0 |    216960 |  0.03 |
 |   LUT as Memory         |    0 |     0 |          0 |     99840 |  0.00 |
 | CLB Registers           |   67 |     0 |          0 |    433920 |  0.02 |
 |   Register as Flip Flop |   67 |     0 |          0 |    433920 |  0.02 |
@@ -160,7 +160,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | LUT2     |   22 |                 CLB |
 | LUT4     |   14 |                 CLB |
 | LUT5     |   10 |                 CLB |
-| LUT3     |    7 |                 CLB |
+| LUT3     |    9 |                 CLB |
 | LUT1     |    7 |                 CLB |
 | CARRY8   |    6 |                 CLB |
 | INBUF    |    3 |                 I/O |

@@ -35,21 +35,20 @@ initial begin
   rst_sys_n = 1'b1;
   #100;
 
-  in_button = 1'b0;
-  #1_000_000;
-  in_button = 1'b1;
-  #500_000;
-  in_button = 1'b0;
-  #1_500_000;  
-  in_button = 1'b1; 
-  #500_000;         
-  in_button = 1'b0; 
-  #2_000_000;  
-  in_button = 1'b1;  
-  #500_000;          
-  
-  #1_000_000;
-  $finish;
+  forever begin
+    in_button = 1'b0;
+    #100_000;
+    in_button = 1'b1;
+    #500_000;
+    in_button = 1'b0;
+    #1_500_000;  
+    in_button = 1'b1; 
+    #500_000;         
+    in_button = 1'b0; 
+    #2_000_000;  
+    in_button = 1'b1;  
+    #500_000; 
+  end
 end
 
 always #5 clk_sys = ~clk_sys;

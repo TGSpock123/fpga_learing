@@ -3,10 +3,10 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Tue Aug 12 11:08:08 2025
-# Process ID         : 20392
+# Start of session at: Wed Aug 13 17:57:48 2025
+# Process ID         : 8352
 # Current directory  : D:/GitHub/fpga_learing/XIV_servo
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent20232 D:\GitHub\fpga_learing\XIV_servo\XIV_servo.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent15312 D:\GitHub\fpga_learing\XIV_servo\XIV_servo.xpr
 # Log file           : D:/GitHub/fpga_learing/XIV_servo/vivado.log
 # Journal file       : D:/GitHub/fpga_learing/XIV_servo\vivado.jou
 # Running On         : DESKTOP-IMB8E6N
@@ -19,78 +19,101 @@
 # Host memory        : 17013 MB
 # Swap memory        : 2550 MB
 # Total Virtual      : 19563 MB
-# Available Virtual  : 9419 MB
+# Available Virtual  : 7755 MB
 #-----------------------------------------------------------
 start_gui
 open_project D:/GitHub/fpga_learing/XIV_servo/XIV_servo.xpr
 update_compile_order -fileset sources_1
-launch_simulation -install_path D:/questasim64_2024.1/win64
-launch_simulation -install_path D:/questasim64_2024.1/win64
 synth_design -top top -part xcku5p-ffvb676-2-i -lint 
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-add_files -norecurse {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v}
-file mkdir D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1
-file mkdir D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new
-close [ open D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc w ]
-add_files -fileset constrs_1 D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc
-refresh_design
-place_ports rst_sys_n W19
-place_ports in_button W20
-place_ports clk_sys V23
-set_property IOSTANDARD LVCMOS18 [get_ports [list clk_sys]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list in_button]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list out_servo]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list rst_sys_n]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list out_servo]]
-place_ports out_servo AB22
-set_property IOSTANDARD LVCMOS18 [get_ports [list out_servo]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list out_servo]]
-place_ports out_servo AA22
-place_ports out_servo AB22
-set_property IOSTANDARD LVCMOS33 [get_ports [list out_servo]]
-set_property IOSTANDARD HSTL_I_12 [get_ports [list out_servo]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list out_servo]]
-set_property IOSTANDARD LVCMOS25 [get_ports [list out_servo]]
-set_property IOSTANDARD LVCMOS25 [get_ports [list out_servo]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list out_servo]]
-set_property target_constrs_file D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc [current_fileset -constrset]
-save_constraints -force
-set_property IOSTANDARD k [get_ports [list out_servo]]
-close_design
-synth_design -rtl -rtl_skip_mlo -name rtl_1
 launch_simulation -install_path D:/questasim64_2024.1/win64
 launch_simulation -install_path D:/questasim64_2024.1/win64
 launch_simulation -install_path D:/questasim64_2024.1/win64
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top tb_pwm_generate [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-refresh_design
 launch_simulation -install_path D:/questasim64_2024.1/win64
-refresh_design
-launch_simulation -install_path D:/questasim64_2024.1/win64
-refresh_design
-refresh_design
+reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_project
+synth_design -rtl -rtl_skip_mlo -name rtl_1
 synth_design -top top -part xcku5p-ffvb676-2-i -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation -install_path D:/questasim64_2024.1/win64
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -top top -part xcku5p-ffvb676-2-i -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
 refresh_design
 synth_design -top top -part xcku5p-ffvb676-2-i -lint 
 launch_simulation -install_path D:/questasim64_2024.1/win64
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top tb_top [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-synth_design -top top -part xcku5p-ffvb676-2-i -lint 
-update_compile_order -fileset sim_1
-synth_design -top top -part xcku5p-ffvb676-2-i -lint 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/top.bit} [get_hw_devices xcku5p_0]
+current_hw_device [get_hw_devices xcku5p_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcku5p_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/top.bit} [get_hw_devices xcku5p_0]
+program_hw_devices [get_hw_devices xcku5p_0]
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/top.bit} [get_hw_devices xcku5p_0]
+program_hw_devices [get_hw_devices xcku5p_0]
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/top.bit} [get_hw_devices xcku5p_0]
+program_hw_devices [get_hw_devices xcku5p_0]
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/top.bit} [get_hw_devices xcku5p_0]
+program_hw_devices [get_hw_devices xcku5p_0]
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/top.bit} [get_hw_devices xcku5p_0]
+program_hw_devices [get_hw_devices xcku5p_0]
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+close_hw_manager
 refresh_design
-refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/top.bit} [get_hw_devices xcku5p_0]
+current_hw_device [get_hw_devices xcku5p_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcku5p_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/top.bit} [get_hw_devices xcku5p_0]
+program_hw_devices [get_hw_devices xcku5p_0]
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/top.bit} [get_hw_devices xcku5p_0]
+program_hw_devices [get_hw_devices xcku5p_0]
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/top.bit} [get_hw_devices xcku5p_0]
+program_hw_devices [get_hw_devices xcku5p_0]
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xcku5p_0]
+set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/top.bit} [get_hw_devices xcku5p_0]
+program_hw_devices [get_hw_devices xcku5p_0]
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+close_hw_manager
 refresh_design
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
@@ -107,3 +130,7 @@ set_property PROGRAM.FILE {D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_
 program_hw_devices [get_hw_devices xcku5p_0]
 refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
 close_hw_manager
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

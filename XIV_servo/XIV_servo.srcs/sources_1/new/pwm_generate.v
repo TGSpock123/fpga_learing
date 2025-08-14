@@ -35,7 +35,7 @@ reg [2:0] reg_500ms_times;
 reg reg_out_pwm;
 //三极管反向
 assign out_pwm = ~reg_out_pwm;
-assign flag_high_low = ~(reg_500ms_times == output_level);
+assign flag_high_low = (reg_500ms_times == output_level);
 
 counter
 #(

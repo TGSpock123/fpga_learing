@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Wed Aug 13 01:20:59 2025
-# Process ID         : 5700
+# Start of session at: Thu Aug 14 10:44:20 2025
+# Process ID         : 20388
 # Current directory  : D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/synth_1
 # Command line       : vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file           : D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/synth_1/top.vds
@@ -17,12 +17,12 @@
 # CPU Physical cores : 4
 # CPU Logical cores  : 8
 # Host memory        : 17013 MB
-# Swap memory        : 4152 MB
-# Total Virtual      : 21166 MB
-# Available Virtual  : 4158 MB
+# Swap memory        : 4810 MB
+# Total Virtual      : 21823 MB
+# Available Virtual  : 4111 MB
 #-----------------------------------------------------------
 source top.tcl -notrace
-create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 642.551 ; gain = 201.770
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 641.383 ; gain = 201.711
 Command: read_checkpoint -auto_incremental -incremental D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/utils_1/imports/synth_1/top.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -35,9 +35,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1656
+INFO: [Synth 8-7075] Helper process launched with PID 19908
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1959.617 ; gain = 218.688
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1959.266 ; gain = 217.734
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
 INFO: [Synth 8-6157] synthesizing module 'button_debounce' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
@@ -48,7 +48,7 @@ INFO: [Synth 8-6157] synthesizing module 'counter' [D:/GitHub/fpga_learing/XIV_s
 	Parameter COUNT_MS bound to: 10 - type: integer 
 	Parameter COUNT_S bound to: 0 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
-INFO: [Synth 8-226] default block is never used [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:70]
+INFO: [Synth 8-226] default block is never used [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:72]
 INFO: [Synth 8-6155] done synthesizing module 'button_debounce' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:22]
 INFO: [Synth 8-6157] synthesizing module 'servo_level' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'servo_level' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v:23]
@@ -69,40 +69,39 @@ INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [D:/GitHub/fp
 INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'pwm_generate' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter_inst'. This will prevent further optimization [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:51]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'counter_inst'. This will prevent further optimization [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:54]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2064.734 ; gain = 323.805
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2064.262 ; gain = 322.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2064.734 ; gain = 323.805
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2064.262 ; gain = 322.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2064.734 ; gain = 323.805
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2064.262 ; gain = 322.730
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2064.734 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2064.262 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
-create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2149.414 ; gain = 17.898
 Finished Parsing XDC File [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2149.414 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2155.809 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2149.414 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2155.809 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2149.414 ; gain = 408.484
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2155.809 ; gain = 414.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -110,16 +109,26 @@ Start Loading Part and Timing Information
 Loading part: xcku5p-ffvb676-2-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2149.414 ; gain = 408.484
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2155.809 ; gain = 414.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2149.414 ; gain = 408.484
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2155.809 ; gain = 414.277
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'reg_state_reg' in module 'button_debounce'
+INFO: [Synth 8-6159] Found Keep on FSM register 'reg_state_reg' in module 'button_debounce', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          STATE_BTN_IDLE |                               00 |                               00
+          STATE_BTN_DOWN |                               01 |                               01
+          STATE_BTN_KEEP |                               11 |                               11
+            STATE_BTN_UP |                               10 |                               10
+---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 2149.414 ; gain = 408.484
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2155.809 ; gain = 414.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -135,12 +144,12 @@ Detailed RTL Component Info :
 	               20 Bit    Registers := 1     
 	               16 Bit    Registers := 1     
 	                3 Bit    Registers := 2     
-	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input    3 Bit        Muxes := 2     
-	   6 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -157,32 +166,26 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'button_debounce_inst/reg_next_reg[1]/Q' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'button_debounce_inst/reg_next_reg[0]/Q' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v:62]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2149.414 ; gain = 408.484
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2155.809 ; gain = 414.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 2708.594 ; gain = 967.664
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2696.668 ; gain = 955.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2740.332 ; gain = 999.402
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2728.469 ; gain = 986.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2740.332 ; gain = 999.402
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2728.469 ; gain = 986.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -200,37 +203,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 2936.496 ; gain = 1195.566
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2924.992 ; gain = 1183.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 2936.496 ; gain = 1195.566
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2924.992 ; gain = 1183.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 2936.496 ; gain = 1195.566
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2924.992 ; gain = 1183.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 2936.496 ; gain = 1195.566
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2924.992 ; gain = 1183.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 2936.496 ; gain = 1195.566
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2924.992 ; gain = 1183.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 2936.496 ; gain = 1195.566
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2924.992 ; gain = 1183.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -250,7 +253,7 @@ Report Cell Usage:
 |2     |CARRY8 |     6|
 |3     |LUT1   |     7|
 |4     |LUT2   |    22|
-|5     |LUT3   |     7|
+|5     |LUT3   |     9|
 |6     |LUT4   |    14|
 |7     |LUT5   |    10|
 |8     |LUT6   |    30|
@@ -259,30 +262,29 @@ Report Cell Usage:
 |11    |OBUF   |     1|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 2936.496 ; gain = 1195.566
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2924.992 ; gain = 1183.461
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 6 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 2936.496 ; gain = 1110.887
-Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 2936.496 ; gain = 1195.566
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 2924.992 ; gain = 1091.914
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 2924.992 ; gain = 1183.461
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2936.496 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2924.992 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2936.496 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2924.992 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   BUFG => BUFGCE: 1 instance 
   IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
 
-Synth Design complete | Checksum: a6ff3475
+Synth Design complete | Checksum: eb13a316
 INFO: [Common 17-83] Releasing license: Synthesis
-38 Infos, 1 Warnings, 6 Critical Warnings and 0 Errors encountered.
+40 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 2936.496 ; gain = 2289.586
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2936.496 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 2924.992 ; gain = 2278.797
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2924.992 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/synth_1/top.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Aug 13 01:22:24 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 14 10:45:25 2025...

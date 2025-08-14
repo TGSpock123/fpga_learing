@@ -110,9 +110,10 @@ set rc [catch {
   set_param power.BramSDPPropagationFix 1
   set_param power.enableUnconnectedCarry8PinPower 1
   set_param power.enableCarry8RouteBelPower 1
-  set_param synth.incrementalSynthesisCache D:/GitHub/fpga_learing/XIV_servo/.Xil/Vivado-20392-DESKTOP-IMB8E6N/incrSyn
+  set_param synth.incrementalSynthesisCache D:/GitHub/fpga_learing/XIV_servo/.Xil/Vivado-8352-DESKTOP-IMB8E6N/incrSyn
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param power.enableLutRouteBelPower 1
+  set_param xicom.use_bs_reader 1
   set_param simulator.questaInstallPath D:/questasim64_2024.1/win64
   set_param runs.launchOptions { -jobs 4  }
 OPTRACE "create in-memory project" START { }

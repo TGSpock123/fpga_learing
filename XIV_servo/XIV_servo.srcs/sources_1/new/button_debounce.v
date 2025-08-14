@@ -25,6 +25,7 @@ module button_debounce
   input wire rst_sys_n,
   input wire in_button,
   output wire event_button
+//  output wire led_out
 );
 
 parameter STATE_BTN_IDLE = 2'b00;
@@ -32,14 +33,16 @@ parameter STATE_BTN_DOWN = 2'b01;
 parameter STATE_BTN_KEEP = 2'b11;
 parameter STATE_BTN_UP = 2'b10;
 
-reg [1:0] reg_next = STATE_BTN_IDLE;
-(*mark_debug = "true"*) reg [1:0] reg_state = STATE_BTN_IDLE;
+reg [1:0] reg_next;
+(*mark_debug = "true"*) reg [1:0] reg_state;
 (*mark_debug = "true"*) wire flag_10_ms;
-reg reg_output = 1'b0;
+reg reg_output;
+//reg reg_led;
 wire is_entering_up_state;
 
 assign event_button = reg_output;
 assign is_entering_up_state = (reg_state == STATE_BTN_KEEP) && (in_button == 1'b1) && (flag_10_ms);
+//assign led_out = reg_led;
 
 counter
 #(
@@ -59,7 +62,6 @@ counter
 always @(posedge clk_sys or negedge rst_sys_n) begin
   if (rst_sys_n == 1'b0) begin
     reg_state <= STATE_BTN_IDLE;
-    reg_next <= STATE_BTN_IDLE;
   end else if (flag_10_ms == 1'b1) begin
     reg_state <= reg_next;
   end else;
@@ -119,8 +121,10 @@ end
 always @(posedge clk_sys or negedge rst_sys_n) begin
   if (rst_sys_n == 1'b0) begin
     reg_output <= 1'b0;
+//    reg_led <= 1'b0;
   end else if(is_entering_up_state == 1) begin
     reg_output <= 1'b1;
+//    reg_led <= ~reg_led;
   end else begin
     reg_output <= 1'b0;
   end
