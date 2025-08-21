@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0xB8B5CFF9
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                              Checksum
+0x00000000    0x0047556B    Aug 18 18:24:53 2025    D:/GitHub/fpga_learing/XVI_ip_test/XVI_ip_test.runs/impl_1/ip_single_ram_test.bit    0x01C3E68D
+File Checksum Total                                                                                                                      0x01C3E68D

@@ -1,0 +1,51 @@
+# //  Questa Sim-64
+# //  Version 2020.1 win64 Jan 28 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {tb_ip_double_ram_test_simulate.do}
+# vsim -lib xil_defaultlib tb_ip_double_ram_test_opt 
+# Start time: 15:33:14 on Aug 21,2025
+# Loading work.tb_ip_double_ram_test(fast)
+# Loading work.ip_double_ram_test(fast)
+# Loading unisims_ver.IBUFDS(fast)
+# Loading work.ip_simple_dual_ram_0(fast)
+# Loading blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(fast)
+# Loading blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(fast)
+# Loading blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(fast)
+# Loading blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_output_reg_stage(fast)
+# Loading work.ram_write(fast)
+# Loading work.ram_read(fast)
+# Loading work.glbl(fast)
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Block Memory Generator module tb_ip_double_ram_test.ip_double_ram_test_inst.ip_simple_dual_ram_0_inst.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+add wave -position insertpoint sim:/tb_ip_double_ram_test/ip_double_ram_test_inst/*
+restart
+# Loading work.tb_ip_double_ram_test(fast)
+# Loading work.ip_double_ram_test(fast)
+# Loading unisims_ver.IBUFDS(fast)
+# Loading work.ip_simple_dual_ram_0(fast)
+# Loading blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(fast)
+# Loading blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(fast)
+# Loading blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(fast)
+# Loading blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_output_reg_stage(fast)
+# Loading work.ram_write(fast)
+# Loading work.ram_read(fast)
+# Loading work.glbl(fast)
+run
+# Block Memory Generator module tb_ip_double_ram_test.ip_double_ram_test_inst.ip_simple_dual_ram_0_inst.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# End time: 15:42:00 on Aug 21,2025, Elapsed time: 0:08:46
+# Errors: 0, Warnings: 0

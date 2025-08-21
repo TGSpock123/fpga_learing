@@ -1,0 +1,2 @@
+ip_rom_256x8_256x16_0.v,verilog,xil_defaultlib,../../../../XVI_ip_test.gen/sources_1/ip/ip_rom_256x8_256x16_0/sim/ip_rom_256x8_256x16_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

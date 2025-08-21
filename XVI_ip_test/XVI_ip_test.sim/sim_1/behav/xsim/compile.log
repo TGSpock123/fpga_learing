@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHub/fpga_learing/XVI_ip_test/XVI_ip_test.gen/sources_1/ip/ip_pll_0/ip_pll_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ip_pll_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHub/fpga_learing/XVI_ip_test/XVI_ip_test.gen/sources_1/ip/ip_pll_0/ip_pll_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ip_pll_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHub/fpga_learing/XVI_ip_test/XVI_ip_test.srcs/sources_1/new/ip_pll_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ip_pll_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHub/fpga_learing/XVI_ip_test/XVI_ip_test.srcs/sim_1/new/tb_ip_pll_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ip_pll_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHub/fpga_learing/XVI_ip_test/XVI_ip_test.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

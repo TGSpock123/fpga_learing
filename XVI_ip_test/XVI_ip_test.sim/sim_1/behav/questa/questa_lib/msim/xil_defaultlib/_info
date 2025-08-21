@@ -1,0 +1,466 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.01, Jan 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/GitHub/fpga_learing/XVI_ip_test/XVI_ip_test.sim/sim_1/behav/questa
+vglbl
+Z1 !s110 1755761587
+!i10b 1
+!s100 ZHmTNm_h3dd`6mIQLzSUN3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IJT>_:<WW6a7KP^k3<8E3=1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1605673889
+8glbl.v
+Fglbl.v
+!i122 16
+L0 6 78
+Z4 OL;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1755761587.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+Z6 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vip_double_ram_test
+!s10a 1755759525
+!s110 1755759833
+!i10b 1
+!s100 LJZTB@ffIV::k38OnXF=D0
+R2
+I`ik2dG?YogVzd1kIU^i8M3
+R3
+R0
+w1755759525
+8../../../../XVI_ip_test.srcs/sources_1/new/ip_double_ram_test.v
+F../../../../XVI_ip_test.srcs/sources_1/new/ip_double_ram_test.v
+!i122 12
+L0 23 89
+R4
+r1
+!s85 0
+31
+!s108 1755759833.000000
+Z8 !s107 ../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_double_ram_test.v|../../../../XVI_ip_test.srcs/sources_1/new/ram_write.v|../../../../XVI_ip_test.srcs/sources_1/new/ram_read.v|../../../../XVI_ip_test.srcs/sources_1/new/ip_double_ram_test.v|../../../../XVI_ip_test.gen/sources_1/ip/ip_simple_dual_ram_0/sim/ip_simple_dual_ram_0.v|
+Z9 !s90 -incr|-work|xil_defaultlib|+incdir+../../../../XVI_ip_test.gen/sources_1/ip/ip_pll_0|../../../../XVI_ip_test.gen/sources_1/ip/ip_simple_dual_ram_0/sim/ip_simple_dual_ram_0.v|../../../../XVI_ip_test.srcs/sources_1/new/ip_double_ram_test.v|../../../../XVI_ip_test.srcs/sources_1/new/ram_read.v|../../../../XVI_ip_test.srcs/sources_1/new/ram_write.v|../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_double_ram_test.v|
+!i113 0
+R6
+Z10 !s92 -work xil_defaultlib +incdir+../../../../XVI_ip_test.gen/sources_1/ip/ip_pll_0 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R7
+vip_pll_0
+Z11 !s110 1755225926
+!i10b 1
+!s100 ?kQLhPh>@[iomL?KbaX?H1
+R2
+IcM=g`P=li;a;TeOGhlP^U3
+R3
+R0
+Z12 w1755217752
+8../../../../XVI_ip_test.gen/sources_1/ip/ip_pll_0/ip_pll_0.v
+F../../../../XVI_ip_test.gen/sources_1/ip/ip_pll_0/ip_pll_0.v
+!i122 0
+L0 73 31
+R4
+r1
+!s85 0
+31
+Z13 !s108 1755225926.000000
+Z14 !s107 ../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_pll_test.v|../../../../XVI_ip_test.srcs/sources_1/new/ip_pll_test.v|../../../../XVI_ip_test.gen/sources_1/ip/ip_pll_0/ip_pll_0.v|../../../../XVI_ip_test.gen/sources_1/ip/ip_pll_0/ip_pll_0_clk_wiz.v|
+Z15 !s90 -incr|-work|xil_defaultlib|+incdir+../../../../XVI_ip_test.gen/sources_1/ip/ip_pll_0|../../../../XVI_ip_test.gen/sources_1/ip/ip_pll_0/ip_pll_0_clk_wiz.v|../../../../XVI_ip_test.gen/sources_1/ip/ip_pll_0/ip_pll_0.v|../../../../XVI_ip_test.srcs/sources_1/new/ip_pll_test.v|../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_pll_test.v|
+!i113 0
+R6
+R10
+R7
+vip_pll_0_clk_wiz
+R11
+!i10b 1
+!s100 2Jl<`Zi=;8dj^66OnUXI42
+R2
+In4KcA=M094=`7zz3>cElm3
+R3
+R0
+R12
+8../../../../XVI_ip_test.gen/sources_1/ip/ip_pll_0/ip_pll_0_clk_wiz.v
+F../../../../XVI_ip_test.gen/sources_1/ip/ip_pll_0/ip_pll_0_clk_wiz.v
+!i122 0
+L0 71 169
+R4
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R6
+R10
+R7
+vip_pll_test
+R11
+!i10b 1
+!s100 oR2N=<77EPME@7@75K;nT2
+R2
+I?0U>1jRgakaW8dSK9=3kb0
+R3
+R0
+w1755222890
+8../../../../XVI_ip_test.srcs/sources_1/new/ip_pll_test.v
+F../../../../XVI_ip_test.srcs/sources_1/new/ip_pll_test.v
+!i122 0
+L0 23 29
+R4
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R6
+R10
+R7
+vip_rom_256x8_0
+!s10a 1755251914
+Z16 !s110 1755251534
+!i10b 1
+!s100 18QICbm^R<i<f]8>dZOTf3
+R2
+I>[l91Q5ah`G^dRRjgo7f>1
+R3
+R0
+w1755238588
+8../../../../XVI_ip_test.gen/sources_1/ip/ip_rom_256x8_0/sim/ip_rom_256x8_0.v
+F../../../../XVI_ip_test.gen/sources_1/ip/ip_rom_256x8_0/sim/ip_rom_256x8_0.v
+!i122 2
+L0 56 156
+R4
+r1
+!s85 0
+31
+Z17 !s108 1755251534.000000
+Z18 !s107 ../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_rom_test.v|../../../../XVI_ip_test.srcs/sources_1/new/ip_rom_test.v|../../../../XVI_ip_test.gen/sources_1/ip/ip_rom_256x8_0/sim/ip_rom_256x8_0.v|
+Z19 !s90 -incr|-work|xil_defaultlib|+incdir+../../../../XVI_ip_test.gen/sources_1/ip/ip_pll_0|../../../../XVI_ip_test.gen/sources_1/ip/ip_rom_256x8_0/sim/ip_rom_256x8_0.v|../../../../XVI_ip_test.srcs/sources_1/new/ip_rom_test.v|../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_rom_test.v|
+!i113 0
+R6
+R10
+R7
+vip_rom_test
+!s10a 1755247626
+R16
+!i10b 1
+!s100 ncY4m5K@EhYCd:`a;ELPS2
+R2
+IGIz>1zA`k]SOM;T8<AbLm3
+R3
+R0
+w1755247626
+8../../../../XVI_ip_test.srcs/sources_1/new/ip_rom_test.v
+F../../../../XVI_ip_test.srcs/sources_1/new/ip_rom_test.v
+!i122 2
+L0 23 14
+R4
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 0
+R6
+R10
+R7
+vip_simple_dual_ram_0
+!s10a 1755617117
+Z20 !s110 1755758532
+!i10b 1
+!s100 Dl9XKIeH2SZjOoD80fA_Q1
+R2
+IWQDB_2AJUak0lTScF[mPW2
+R3
+R0
+w1755617117
+8../../../../XVI_ip_test.gen/sources_1/ip/ip_simple_dual_ram_0/sim/ip_simple_dual_ram_0.v
+F../../../../XVI_ip_test.gen/sources_1/ip/ip_simple_dual_ram_0/sim/ip_simple_dual_ram_0.v
+!i122 10
+L0 56 175
+R4
+r1
+!s85 0
+31
+Z21 !s108 1755758532.000000
+Z22 !s107 ../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_double_ram_test.v|../../../../XVI_ip_test.srcs/sources_1/new/ram_read.v|../../../../XVI_ip_test.srcs/sources_1/new/ip_double_ram_test.v|../../../../XVI_ip_test.gen/sources_1/ip/ip_simple_dual_ram_0/sim/ip_simple_dual_ram_0.v|
+Z23 !s90 -incr|-work|xil_defaultlib|+incdir+../../../../XVI_ip_test.gen/sources_1/ip/ip_pll_0|../../../../XVI_ip_test.gen/sources_1/ip/ip_simple_dual_ram_0/sim/ip_simple_dual_ram_0.v|../../../../XVI_ip_test.srcs/sources_1/new/ip_double_ram_test.v|../../../../XVI_ip_test.srcs/sources_1/new/ram_read.v|../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_double_ram_test.v|
+!i113 0
+R6
+R10
+R7
+vip_single_ram
+!s10a 1755472952
+Z24 !s110 1755501321
+!i10b 1
+!s100 G=HeP6_f:[U4lHjHdY@Wo3
+R2
+IXIn<o4CS2O@SB=7UQd<?b0
+R3
+R0
+w1755472952
+8../../../../XVI_ip_test.gen/sources_1/ip/ip_single_ram/sim/ip_single_ram.v
+F../../../../XVI_ip_test.gen/sources_1/ip/ip_single_ram/sim/ip_single_ram.v
+!i122 6
+L0 56 165
+R4
+r1
+!s85 0
+31
+Z25 !s108 1755501321.000000
+Z26 !s107 ../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_single_ram_test.v|../../../../XVI_ip_test.srcs/sources_1/new/ram_write_read.v|../../../../XVI_ip_test.srcs/sources_1/new/ip_single_ram_test.v|../../../../XVI_ip_test.gen/sources_1/ip/ip_single_ram/sim/ip_single_ram.v|
+Z27 !s90 -incr|-work|xil_defaultlib|+incdir+../../../../XVI_ip_test.gen/sources_1/ip/ip_pll_0|../../../../XVI_ip_test.gen/sources_1/ip/ip_single_ram/sim/ip_single_ram.v|../../../../XVI_ip_test.srcs/sources_1/new/ip_single_ram_test.v|../../../../XVI_ip_test.srcs/sources_1/new/ram_write_read.v|../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_single_ram_test.v|
+!i113 0
+R6
+R10
+R7
+vip_single_ram_test
+Z28 !s110 1755504507
+!i10b 1
+!s100 7>J^f3?AC=d1AH1XHd99Y2
+R2
+I?@<D1zH9fc2YS58dl:BhJ2
+R3
+R0
+w1755504472
+8../../../../XVI_ip_test.srcs/sources_1/new/ip_single_ram_test.v
+F../../../../XVI_ip_test.srcs/sources_1/new/ip_single_ram_test.v
+!i122 8
+L0 23 42
+R4
+r1
+!s85 0
+31
+Z29 !s108 1755504507.000000
+R26
+R27
+!i113 0
+R6
+R10
+R7
+vram_read
+!s10a 1755748634
+R20
+!i10b 1
+!s100 PozgK`gX]fcc9Lf87ch0z2
+R2
+I?eHWzfcOfh>[AFYN[=^PV0
+R3
+R0
+w1755748634
+8../../../../XVI_ip_test.srcs/sources_1/new/ram_read.v
+F../../../../XVI_ip_test.srcs/sources_1/new/ram_read.v
+!i122 10
+L0 23 26
+R4
+r1
+!s85 0
+31
+R21
+R22
+R23
+!i113 0
+R6
+R10
+R7
+vram_write
+R1
+!i10b 1
+!s100 AAbTaNT0`B<hGh;Y8XzS]2
+R2
+IKTGD7o^[d05[`:C?UYlJC3
+R3
+R0
+w1755761104
+8../../../../XVI_ip_test.srcs/sources_1/new/ram_write.v
+F../../../../XVI_ip_test.srcs/sources_1/new/ram_write.v
+!i122 15
+L0 23 50
+R4
+r1
+!s85 0
+31
+R5
+R8
+R9
+!i113 0
+R6
+R10
+R7
+vram_write_read
+R28
+!i10b 1
+!s100 83TRzV`=_@]^bIKB>2i<22
+R2
+IXeE^KU1I9K@E;5ao>kQ<82
+R3
+R0
+w1755502859
+8../../../../XVI_ip_test.srcs/sources_1/new/ram_write_read.v
+F../../../../XVI_ip_test.srcs/sources_1/new/ram_write_read.v
+!i122 8
+L0 23 66
+R4
+r1
+!s85 0
+31
+R29
+R26
+R27
+!i113 0
+R6
+R10
+R7
+vtb_ip_double_ram_test
+!s10a 1755758421
+R20
+!i10b 1
+!s100 g[FnAS4i8`kg<3F=LF_=i2
+R2
+I]UGWD4Rm1i1j@Mn_jK7Q20
+R3
+R0
+w1755758421
+8../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_double_ram_test.v
+F../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_double_ram_test.v
+!i122 10
+L0 23 28
+R4
+r1
+!s85 0
+31
+R21
+R22
+R23
+!i113 0
+R6
+R10
+R7
+Ttb_ip_double_ram_test_opt
+!s110 1755761588
+VRadQaU_CAdL`B_RJ4=;ie1
+04 21 4 work tb_ip_double_ram_test fast 0
+Z30 04 4 4 work glbl fast 0
+Z31 o+acc=npr -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm -work xil_defaultlib
+R7
+ntb_ip_double_ram_test_opt
+Z32 OL;O;2020.1;71
+vtb_ip_pll_test
+R11
+!i10b 1
+!s100 eOM9R@PXk;ZY[H9JM1_S91
+R2
+I?>Nd];RG`F28FoJV@H83H0
+R3
+R0
+w1755225791
+8../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_pll_test.v
+F../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_pll_test.v
+!i122 0
+L0 22 34
+R4
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R6
+R10
+R7
+Ttb_ip_pll_test_opt
+!s110 1755225928
+V8bmNl79;@YkE`FVKn<2Pa0
+04 14 4 work tb_ip_pll_test fast 0
+R30
+o+acc=npr -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -work xil_defaultlib
+R7
+ntb_ip_pll_test_opt
+R32
+R0
+vtb_ip_rom_test
+!s10a 1755251436
+R16
+!i10b 1
+!s100 z8MzTT0I[PHX_P>6e_b?B3
+R2
+I>X3hE7L4ZYFZCQM9PEV5N3
+R3
+R0
+w1755251436
+8../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_rom_test.v
+F../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_rom_test.v
+!i122 2
+L0 23 34
+R4
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 0
+R6
+R10
+R7
+Ttb_ip_rom_test_opt
+!s110 1755251929
+VXQh5bI=n`nSVSJ]Y6zJGa3
+04 14 4 work tb_ip_rom_test fast 0
+R30
+R31
+R7
+ntb_ip_rom_test_opt
+R32
+R0
+vtb_ip_single_ram_test
+!s10a 1755501282
+R24
+!i10b 1
+!s100 GfnKGegndDhnFiPQzY:Iz1
+R2
+IiP068z52daZUg?Y3?zlkc0
+R3
+R0
+w1755501282
+8../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_single_ram_test.v
+F../../../../XVI_ip_test.srcs/sim_1/new/tb_ip_single_ram_test.v
+!i122 6
+L0 23 25
+R4
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 0
+R6
+R10
+R7
+Ttb_ip_single_ram_test_opt
+!s110 1755504508
+Vn9oB^XL?7Mm?Njh3<Ei?X2
+04 21 4 work tb_ip_single_ram_test fast 0
+R30
+R31
+R7
+ntb_ip_single_ram_test_opt
+R32
+R0
