@@ -55,18 +55,24 @@ if {$::dispatch::connected} {
   }
 }
 
+proc create_report { reportName command } {
+  set status "."
+  append status $reportName ".fail"
+  if { [file exists $status] } {
+    eval file delete [glob $status]
+  }
+  send_msg_id runtcl-4 info "Executing : $command"
+  set retval [eval catch { $command } msg]
+  if { $retval != 0 } {
+    set fp [open $status w]
+    close $fp
+    send_msg_id runtcl-5 warning "$msg"
+  }
+}
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 2
-set_param power.BramSDPPropagationFix 1
-set_param power.enableUnconnectedCarry8PinPower 1
-set_param power.enableCarry8RouteBelPower 1
-set_param synth.incrementalSynthesisCache D:/GitHub/fpga_learing/XIV_servo/.Xil/Vivado-8352-DESKTOP-IMB8E6N/incrSyn
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param power.enableLutRouteBelPower 1
 set_param xicom.use_bs_reader 1
-set_param simulator.questaInstallPath D:/questasim64_2024.1/win64
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param simulator.questaInstallPath C:/questasim64_2020.1/win64
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xcku5p-ffvb676-2-i
 
@@ -82,11 +88,11 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/button_debounce.v
-  D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/counter.v
-  D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/pwm_generate.v
-  D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/servo_level.v
-  D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/new/top.v
+  D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/imports/new/button_debounce.v
+  D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/imports/new/counter.v
+  D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/imports/new/pwm_generate.v
+  D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/imports/new/servo_level.v
+  D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/sources_1/imports/new/top.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -97,12 +103,10 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc
-set_property used_in_implementation false [get_files D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/new/servo.xdc]
+read_xdc D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/imports/new/servo.xdc
+set_property used_in_implementation false [get_files D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/constrs_1/imports/new/servo.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
-
-read_checkpoint -auto_incremental -incremental D:/GitHub/fpga_learing/XIV_servo/XIV_servo.srcs/utils_1/imports/synth_1/top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
@@ -119,7 +123,7 @@ set_param constraints.enableBinaryConstraints false
 write_checkpoint -force -noxdef top.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-generate_parallel_reports -reports { "report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb"  } 
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb"
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

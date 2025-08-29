@@ -1,7 +1,7 @@
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
--------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Thu Aug 14 10:48:31 2025
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date             : Fri Aug 29 12:10:55 2025
 | Host             : DESKTOP-IMB8E6N running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -10,7 +10,7 @@ Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanc
 | Grade            : industrial
 | Process          : typical
 | Characterization : Production
--------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 
 Power Report
 
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.452        |
+| Total On-Chip Power (W)  | 0.455        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.002        |
+| Dynamic (W)              | 0.004        |
 | Device Static (W)        | 0.450        |
 | Effective TJA (C/W)      | 1.7          |
 | Max Ambient (C)          | 99.2         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| CLB Logic      |    <0.001 |      173 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       68 |    216960 |            0.03 |
+| CLB Logic      |    <0.001 |      172 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       66 |    216960 |            0.03 |
 |   Register     |    <0.001 |       67 |    433920 |            0.02 |
 |   CARRY8       |    <0.001 |        6 |     27120 |            0.02 |
-|   Others       |     0.000 |       10 |       --- |             --- |
-| Signals        |    <0.001 |      139 |       --- |             --- |
-| I/O            |    <0.001 |        4 |       280 |            1.43 |
+|   Others       |     0.000 |        9 |       --- |             --- |
+| Signals        |    <0.001 |      141 |       --- |             --- |
+| I/O            |     0.003 |        5 |       280 |            1.79 |
 | Static Power   |     0.450 |          |           |                 |
-| Total          |     0.452 |          |           |                 |
+| Total          |     0.455 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,10 +72,10 @@ Table of Contents
 | Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Vccint     |       0.850 |     0.138 |       0.001 |      0.137 |       NA    | Unspecified | NA         |
-| Vccint_io  |       0.850 |     0.035 |       0.000 |      0.035 |       NA    | Unspecified | NA         |
+| Vccint_io  |       0.850 |     0.036 |       0.000 |      0.035 |       NA    | Unspecified | NA         |
 | Vccbram    |       0.850 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
 | Vccaux     |       1.800 |     0.129 |       0.000 |      0.129 |       NA    | Unspecified | NA         |
-| Vccaux_io  |       1.800 |     0.032 |       0.000 |      0.031 |       NA    | Unspecified | NA         |
+| Vccaux_io  |       1.800 |     0.033 |       0.002 |      0.031 |       NA    | Unspecified | NA         |
 | Vcco33     |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25     |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18     |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -127,11 +127,11 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+--------------+---------+-----------------+
-| Clock        | Domain  | Constraint (ns) |
-+--------------+---------+-----------------+
-| clock_system | clk_sys |            10.0 |
-+--------------+---------+-----------------+
++--------------+-----------+-----------------+
+| Clock        | Domain    | Constraint (ns) |
++--------------+-----------+-----------------+
+| clock_system | clk_sys_p |            10.0 |
++--------------+-----------+-----------------+
 
 
 3. Detailed Reports
@@ -140,10 +140,11 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------+-----------+
-| Name | Power (W) |
-+------+-----------+
-| top  |     0.002 |
-+------+-----------+
++------------------------+-----------+
+| Name                   | Power (W) |
++------------------------+-----------+
+| top                    |     0.004 |
+|   clk_differ_to_single |     0.003 |
++------------------------+-----------+
 
 

@@ -1,14 +1,11 @@
 # do {tb_top_elaborate.do}
-# QuestaSim-64 vopt 2024.1 Compiler 2024.02 Feb  1 2024
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# Start time: 18:31:31 on Aug 13,2025
-# vopt "+acc=npr" -suppress 10016 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.tb_top xil_defaultlib.glbl -o tb_top_opt 
+# QuestaSim-64 vopt 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 17:28:17 on Aug 28,2025
+# vopt "+acc=npr" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.tb_top xil_defaultlib.glbl -o tb_top_opt 
 # 
 # Top level modules:
 # 	tb_top
 # 	glbl
-# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
-# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
 # 
 # Analyzing design...
 # -- Loading module tb_top
@@ -18,16 +15,9 @@
 # -- Loading module counter
 # -- Loading module servo_level
 # -- Loading module pwm_generate
-# Optimizing 9 design-units (inlining 0/9 module instances):
-# -- Optimizing module button_debounce(fast)
-# -- Optimizing module glbl(fast)
+# Incremental compilation check found 8 design-units (out of 9) may be reused.
+# Optimizing 1 design-unit (inlining 0/9 module instances):
 # -- Optimizing module pwm_generate(fast)
-# -- Optimizing module counter(fast)
-# -- Optimizing module counter(fast__1)
-# -- Optimizing module counter(fast__2)
-# -- Optimizing module tb_top(fast)
-# -- Optimizing module servo_level(fast)
-# -- Optimizing module top(fast)
 # Optimized design name is tb_top_opt
-# End time: 18:31:32 on Aug 13,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
+# End time: 17:28:18 on Aug 28,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

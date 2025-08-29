@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0xC4781564
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                           Checksum
+0x00000000    0x003B1787    Aug 28 18:06:08 2025    D:/GitHub/fpga_learing/XIV_servo/XIV_servo.runs/impl_1/top.bit    0x015485DC
+File Checksum Total                                                                                                   0x015485DC

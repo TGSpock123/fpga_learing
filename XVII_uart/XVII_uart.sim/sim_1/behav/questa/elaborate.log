@@ -1,0 +1,27 @@
+# do {XVII_uart_elaborate.do}
+# QuestaSim-64 vopt 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 15:10:10 on Aug 27,2025
+# vopt "+acc=npr" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.XVII_uart xil_defaultlib.glbl -o XVII_uart_opt 
+# 
+# Top level modules:
+# 	XVII_uart
+# 	glbl
+# 
+# Analyzing design...
+# -- Loading module XVII_uart
+# -- Loading module glbl
+# -- Loading module unisims_ver.IBUFDS
+# -- Loading module clock_generator
+# -- Loading module uart_rx
+# -- Loading module uart_tx
+# Optimizing 7 design-units (inlining 0/6 module instances, 0/1 cell instances):
+# -- Optimizing module uart_rx(fast)
+# -- Optimizing module uart_tx(fast)
+# -- Optimizing module unisims_ver.IBUFDS(fast)
+# -- Optimizing module glbl(fast)
+# -- Optimizing module clock_generator(fast__1)
+# -- Optimizing module clock_generator(fast)
+# -- Optimizing module XVII_uart(fast)
+# Optimized design name is XVII_uart_opt
+# End time: 15:10:11 on Aug 27,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
