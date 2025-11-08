@@ -1,9 +1,0 @@
-0.7
-2020.2
-Nov 18 2020
-09:47:47
-D:/GitHub/fpga_learing/XVII_uart/XVII_uart.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
-D:/GitHub/fpga_learing/XVII_uart/XVII_uart.srcs/sources_1/new/XVII_uart.v,1756116042,verilog,,,,XVII_uart,,,,,,,,
-D:/GitHub/fpga_learing/XVII_uart/XVII_uart.srcs/sources_1/new/clock_generator.v,1756007660,verilog,,D:/GitHub/fpga_learing/XVII_uart/XVII_uart.srcs/sources_1/new/uart_rx.v,,clock_generator,,,,,,,,
-D:/GitHub/fpga_learing/XVII_uart/XVII_uart.srcs/sources_1/new/uart_rx.v,1756115983,verilog,,D:/GitHub/fpga_learing/XVII_uart/XVII_uart.srcs/sources_1/new/uart_tx.v,,uart_rx,,,,,,,,
-D:/GitHub/fpga_learing/XVII_uart/XVII_uart.srcs/sources_1/new/uart_tx.v,1756115803,verilog,,D:/GitHub/fpga_learing/XVII_uart/XVII_uart.srcs/sources_1/new/XVII_uart.v,,uart_tx,,,,,,,,

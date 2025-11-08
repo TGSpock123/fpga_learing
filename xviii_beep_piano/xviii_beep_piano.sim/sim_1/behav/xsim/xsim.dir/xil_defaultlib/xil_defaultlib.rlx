@@ -1,0 +1,8 @@
+0.7
+v2020.2.2
+Feb  9 2021
+06:17:39
+D:/GitHub/fpga_learing/xviii_beep_piano/xviii_beep_piano.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/GitHub/fpga_learing/xviii_beep_piano/xviii_beep_piano.srcs/sim_1/new/tb_button_debounce.v,1761879808,verilog,,,,tb_button_debounce,,,,,,,,
+D:/GitHub/fpga_learing/xviii_beep_piano/xviii_beep_piano.srcs/sources_1/new/button_debounce.v,1761879853,verilog,,D:/GitHub/fpga_learing/xviii_beep_piano/xviii_beep_piano.srcs/sources_1/new/counter.v,,button_debounce,,,,,,,,
+D:/GitHub/fpga_learing/xviii_beep_piano/xviii_beep_piano.srcs/sources_1/new/counter.v,1761879160,verilog,,D:/GitHub/fpga_learing/xviii_beep_piano/xviii_beep_piano.srcs/sim_1/new/tb_button_debounce.v,,counter,,,,,,,,

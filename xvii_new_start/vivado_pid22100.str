@@ -1,0 +1,203 @@
+/*
+
+Xilinx Vivado v2020.2.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3118627 on Tue Feb  9 05:14:06 MST 2021
+IP Build: 3115676 on Tue Feb  9 10:48:11 MST 2021
+
+Process ID (PID): 22100
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Nov 06 20:52:08 CST 2025
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	D:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	D:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	tgspo
+User home directory: C:/Users/tgspo
+User working directory: D:/GitHub/fpga_learing/xvii_new_start
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2020.2
+RDI_DATADIR: D:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/tgspo/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/tgspo/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/tgspo/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/GitHub/fpga_learing/xvii_new_start/vivado.log
+Vivado journal file location: 	D:/GitHub/fpga_learing/xvii_new_start/vivado.jou
+Engine tmp dir: 	D:/GitHub/fpga_learing/xvii_new_start/.Xil/Vivado-22100-DESKTOP-IMB8E6N
+
+Xilinx Environment Variables
+----------------------------
+INTELFPGAOCLSDKROOT: D:\intelFPGA\18.0\hld
+XILINX: D:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: D:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2020.2
+XILINX_SDK: D:/Xilinx/Vitis/2020.2
+XILINX_VITIS: D:/Xilinx/Vitis/2020.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	132 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,104 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 82 MB (+83109kb) [00:00:11]
+// [Engine Memory]: 1,104 MB (+1006266kb) [00:00:11]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: D:\GitHub\fpga_learing\xvii_new_start\xvii_new_start.xpr. Version: Vivado v2020.2.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/GitHub/fpga_learing/xvii_new_start/xvii_new_start.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,104 MB. GUI used memory: 55 MB. Current time: 11/6/25, 8:52:08 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/GitHub/fpga_learing/xvii_new_start/xvii_new_start.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 99 MB (+14140kb) [00:00:22]
+// WARNING: HEventQueue.dispatchEvent() is taking  3635 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'. 
+// Project name: xvii_new_start; location: D:/GitHub/fpga_learing/xvii_new_start; part: xczu19eg-ffvc1760-2-i
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 1141.246 ; gain = 0.000 
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 110 MB (+5805kb) [00:00:28]
+// [GUI Memory]: 125 MB (+10269kb) [00:00:29]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 138 MB (+7507kb) [00:05:33]
+// Elapsed time: 412 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aK
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xczu19eg-ffvc1760-2-i Top: xvii_top 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,453 MB. GUI used memory: 77 MB. Current time: 11/6/25, 8:59:28 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  3954 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4537 ms. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 250ms to process. Increasing delay to 2000 ms.
+// TclEventType: ELABORATE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 2,093 MB. GUI used memory: 78 MB. Current time: 11/6/25, 8:59:49 PM CST
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 2,110 MB (+996765kb) [00:08:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,112 MB. GUI used memory: 77 MB. Current time: 11/6/25, 9:00:03 PM CST
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: D:/Xilinx/Vivado/2020.2/data/parts/xilinx/zynquplus/devint/zynquplus/xczu19eg/xczu19eg.xgd; ZipEntry: xczu19eg_floorplan.xgd elapsed time: 1.7s
+// [Engine Memory]: 2,226 MB (+10627kb) [00:08:13]
+// [GUI Memory]: 189 MB (+46198kb) [00:08:14]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3741 ms.
+// Tcl Message: INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i 
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2396.969 ; gain = 140.469 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'xvii_top' [D:/GitHub/fpga_learing/xvii_new_start/xvii_new_start.srcs/sources_1/new/xvii_top.v:23] INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:51974] 
+// Tcl Message: 	Parameter CAPACITANCE bound to: DONT_CARE - type: string  	Parameter DIFF_TERM bound to: FALSE - type: string  	Parameter DQS_BIAS bound to: FALSE - type: string  	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [D:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:51974] INFO: [Synth 8-6157] synthesizing module 'counter' [D:/GitHub/fpga_learing/xvii_new_start/xvii_new_start.srcs/sources_1/new/counter.v:23] 
+// Tcl Message: 	Parameter CLK_FREQ_250_MHZ bound to: 17'b00000000011111010  	Parameter CLK_FREQ_200_MHZ bound to: 17'b00000000011001000  	Parameter CLK_FREQ_100_MHZ bound to: 17'b00000000001100100  	Parameter CLK_FREQ_50_MHZ bound to: 17'b00000000000110010  	Parameter CLK_FREQ_1_MHZ bound to: 17'b00000000000000001  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'counter' (2#1) [D:/GitHub/fpga_learing/xvii_new_start/xvii_new_start.srcs/sources_1/new/counter.v:23] INFO: [Synth 8-6155] done synthesizing module 'xvii_top' (3#1) [D:/GitHub/fpga_learing/xvii_new_start/xvii_new_start.srcs/sources_1/new/xvii_top.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2445.438 ; gain = 188.938 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2463.398 ; gain = 206.898 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2463.398 ; gain = 206.898 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2475.438 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [D:/GitHub/fpga_learing/xvii_new_start/xvii_new_start.srcs/constrs_1/new/xvii_top.xdc] Finished Parsing XDC File [D:/GitHub/fpga_learing/xvii_new_start/xvii_new_start.srcs/constrs_1/new/xvii_top.xdc] Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2596.836 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 1 instances were transformed.   IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance   
+// [GUI Memory]: 232 MB (+35024kb) [00:08:16]
+// Xgd.load filename: D:/Xilinx/Vivado/2020.2/data/parts/xilinx/zynquplus/devint/zynquplus/xczu19eg/xczu19eg.xgd; ZipEntry: xczu19eg_detail.xgd elapsed time: 3.5s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 4.5s
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:20 . Memory (MB): peak = 2833.898 ; gain = 577.398 
+// Tcl Message: 11 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:44 . Memory (MB): peak = 2833.898 ; gain = 1692.652 
+// [Engine Memory]: 2,352 MB (+15360kb) [00:08:18]
+// 'dV' command handler elapsed time: 47 seconds
+// Elapsed time: 46 seconds
+dismissDialog("Open Elaborated Design"); // bz
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 4.9s
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_IO_PORTS_IN_THIS_SCHEMATIC, "7 I/O Ports"); // h
+// [GUI Memory]: 252 MB (+8603kb) [00:08:26]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,391 MB. GUI used memory: 193 MB. Current time: 11/6/25, 9:30:04 PM CST

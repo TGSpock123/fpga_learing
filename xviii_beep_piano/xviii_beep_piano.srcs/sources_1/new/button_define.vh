@@ -1,0 +1,32 @@
+`ifndef BUTTON_DEFINE_VH
+`define BUTTON_DEFINE_VH
+
+`define BUTTON_0_HOLD   5'b00_001
+`define BUTTON_1_HOLD   5'b00_011
+`define BUTTON_2_HOLD   5'b00_010
+`define BUTTON_3_HOLD   5'b00_110
+`define BUTTON_4_HOLD   5'b00_111
+`define BUTTON_5_HOLD   5'b00_101
+`define BUTTON_6_HOLD   5'b00_100
+`define BUTTON_7_HOLD   5'b01_100
+`define BUTTON_8_HOLD   5'b01_101
+`define BUTTON_9_HOLD   5'b01_111
+`define BUTTON_10_HOLD  5'b01_110
+`define BUTTON_11_HOLD  5'b01_010
+`define BUTTON_12_HOLD  5'b01_011
+`define BUTTON_13_HOLD  5'b01_001
+`define BUTTON_14_HOLD  5'b01_000
+`define BUTTON_15_HOLD  5'b11_000
+`define BUTTON_16_HOLD  5'b11_001
+`define BUTTON_17_HOLD  5'b11_011
+`define BUTTON_18_HOLD  5'b11_010
+`define BUTTON_19_HOLD  5'b11_110
+`define BUTTON_20_HOLD  5'b11_111
+`define BUTTON_21_HOLD  5'b11_101
+`define BUTTON_22_HOLD  5'b11_100
+`define BUTTON_23_HOLD  5'b10_100
+`define BUTTON_24_HOLD  5'b10_101
+`define BUTTON_25_HOLD  5'b10_111
+`define NO_BUTTON_HOLD  5'b00_000
+
+`endif 
