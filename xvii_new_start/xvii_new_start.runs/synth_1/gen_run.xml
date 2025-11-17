@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xczu19eg-ffvc1760-2-i" LaunchTime="1761825141">
   <File Type="PA-TCL" Name="xvii_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="xvii_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="xvii_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="xvii_top.vds"/>
   <File Type="RDS-UTIL" Name="xvii_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="xvii_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="xvii_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="xvii_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="xvii_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/counter.v">
@@ -51,9 +48,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

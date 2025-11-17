@@ -178,19 +178,26 @@ always @(*) begin
 
   for (i = 0; i < 26; i = i + 1) begin
     if (event_button_release[i] == 1'b1) begin
+      // Clear ALL slots matching this button ID (not just the first one)
       if (which_button_buffer_1[0] == button_id(i[4:0])) begin
         which_button_buffer_1[0] = `NO_BUTTON_HOLD;
-      end else if (which_button_buffer_1[1] == button_id(i[4:0])) begin
+      end
+      if (which_button_buffer_1[1] == button_id(i[4:0])) begin
         which_button_buffer_1[1] = `NO_BUTTON_HOLD;
-      end else if (which_button_buffer_1[2] == button_id(i[4:0])) begin
+      end
+      if (which_button_buffer_1[2] == button_id(i[4:0])) begin
         which_button_buffer_1[2] = `NO_BUTTON_HOLD;
-      end else if (which_button_buffer_1[3] == button_id(i[4:0])) begin
+      end
+      if (which_button_buffer_1[3] == button_id(i[4:0])) begin
         which_button_buffer_1[3] = `NO_BUTTON_HOLD;
-      end else if (which_button_buffer_1[4] == button_id(i[4:0])) begin
+      end
+      if (which_button_buffer_1[4] == button_id(i[4:0])) begin
         which_button_buffer_1[4] = `NO_BUTTON_HOLD;
-      end else if (which_button_buffer_1[5] == button_id(i[4:0])) begin
+      end
+      if (which_button_buffer_1[5] == button_id(i[4:0])) begin
         which_button_buffer_1[5] = `NO_BUTTON_HOLD;
-      end else if (which_button_buffer_1[6] == button_id(i[4:0])) begin
+      end
+      if (which_button_buffer_1[6] == button_id(i[4:0])) begin
         which_button_buffer_1[6] = `NO_BUTTON_HOLD;
       end
     end

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 20:00:34 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Fri Nov 14 15:22:38 2025
+# Process ID: 31644
+# Current directory: D:/GitHub/fpga_learing/xvii_new_start
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12784 D:\GitHub\fpga_learing\xvii_new_start\xvii_new_start.xpr
+# Log file: D:/GitHub/fpga_learing/xvii_new_start/vivado.log
+# Journal file: D:/GitHub/fpga_learing/xvii_new_start\vivado.jou
+# Running On: DESKTOP-IMB8E6N, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 17013 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/GitHub/fpga_learing/xvii_new_start/xvii_new_start.xpr
+update_compile_order -fileset sources_1

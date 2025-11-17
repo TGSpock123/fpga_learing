@@ -29,14 +29,25 @@ module xviii_top
   output wire [6:0]   out_buzzer
 );
 
+wire clk_sys_ibuf;
 wire clk_sys;
 wire [34:0] which_button;
 
-IBUFDS IBUFDS_SYS
+// Ensure the differential system clock drives the global clock network
+IBUFGDS #(
+  .DIFF_TERM   ("FALSE"),
+  .IBUF_LOW_PWR("TRUE")
+) IBUFGDS_SYS
 (
-  .O  (clk_sys),
   .I  (clk_sys_p),
-  .IB (clk_sys_n)
+  .IB (clk_sys_n),
+  .O  (clk_sys_ibuf)
+);
+
+BUFG BUFG_SYS
+(
+  .I(clk_sys_ibuf),
+  .O(clk_sys)
 );
 
 button_top button_top_inst
