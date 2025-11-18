@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_vdhl_silly_behav/xsimk.exe -simmode gui -wdb tb_vdhl_silly_behav.wdb -simrunnum 0 -socket 56122
+Design successfully loaded
+Design Loading Memory Usage: 7280 KB (Peak: 7280 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 7712 KB (Peak: 7712 KB)
+Simulation CPU Usage: 0 ms

@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "vhdl_quick_demo_silly_behav" "xil_defaultlib.vhdl_quick_demo_silly" -log "elaborate.log" 

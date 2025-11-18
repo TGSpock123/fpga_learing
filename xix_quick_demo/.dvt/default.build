@@ -1,0 +1,9 @@
+### Specify (drag and drop) here e Language top files ...
+# /path/to/top.e
+### ... e Language test files ...
+# +dvt_test+/path/to/test.e
+### ... and $SPECMAN_PATH.
+# +dvt_setenv+SPECMAN_PATH=$SPECMAN_PATH:/path/to/sources/location
+# Automatically identify and compile all the source files in the project directory.
+# DO NOT explicitly list files/directories in 'dvt_init_auto' sections. Use 'dvt_init' sections instead.
++dvt_init_auto

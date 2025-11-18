@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 20:00:34 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Tue Nov 18 11:09:22 2025
+# Process ID: 19812
+# Current directory: D:/GitHub/fpga_learing/xix_quick_demo/xix_quick_demo.runs/synth_1
+# Command line: vivado.exe -log vhdl_quick_demo_silly.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vhdl_quick_demo_silly.tcl
+# Log file: D:/GitHub/fpga_learing/xix_quick_demo/xix_quick_demo.runs/synth_1/vhdl_quick_demo_silly.vds
+# Journal file: D:/GitHub/fpga_learing/xix_quick_demo/xix_quick_demo.runs/synth_1\vivado.jou
+# Running On: DESKTOP-IMB8E6N, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 17013 MB
+#-----------------------------------------------------------
+source vhdl_quick_demo_silly.tcl -notrace
