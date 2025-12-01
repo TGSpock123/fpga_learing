@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl2008 xil_defaultlib  \
+"../../../../xix_quick_demo.srcs/sources_1/new/demo_and_eight.vhd" \
+
+# Do not sort compile order
+nosort

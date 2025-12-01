@@ -1,1 +1,3 @@
 Time resolution is 1 ps
+仿真完成
+$finish called at time : 2560 ns : File "D:/GitHub/fpga_learing/xix_quick_demo/xix_quick_demo.srcs/sim_1/new/tb_and_eight.sv" Line 44
