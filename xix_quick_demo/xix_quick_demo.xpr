@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="61" Path="D:/GitHub/fpga_learing/xix_quick_demo/xix_quick_demo.xpr">
+<Project Version="7" Minor="61" Path="C:/GitHub/fpga_learing/xix_quick_demo/xix_quick_demo.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3d822e4b1dc240ea8101c9e0a667e65a"/>
@@ -110,6 +110,13 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/demo_mux_two.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/demo_mux_four.vhd">
+        <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

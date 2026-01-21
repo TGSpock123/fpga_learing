@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 20:00:34 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Mon Jan 19 17:39:35 2026
+# Process ID: 11096
+# Current directory: C:/GitHub/fpga_learing/xix_quick_demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36860 C:\GitHub\fpga_learing\xix_quick_demo\xix_quick_demo.xpr
+# Log file: C:/GitHub/fpga_learing/xix_quick_demo/vivado.log
+# Journal file: C:/GitHub/fpga_learing/xix_quick_demo\vivado.jou
+# Running On: Âõ¿¥²©ÌØ_±Ê¼Ç±¾_0, OS: Windows, CPU Frequency: 2395 MHz, CPU Physical cores: 30, Host memory: 33521 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/GitHub/fpga_learing/xix_quick_demo/xix_quick_demo.xpr
+update_compile_order -fileset sources_1
