@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../xx_fft_lab.srcs/sources_1/new/dds_core.vhd" \
+
+# Do not sort compile order
+nosort
