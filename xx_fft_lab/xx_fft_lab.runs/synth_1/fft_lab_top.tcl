@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.runs/synth_1/fft_lab_top.tcl"
+  variable script "C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.runs/synth_1/fft_lab_top.tcl"
   variable category "vivado_synth"
 }
 
@@ -71,7 +71,11 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache ./.Xil/Vivado-5172-tgspock-BOHK-WAX9X/incrSyn
+set_param power.BramSDPPropagationFix 1
+set_param power.enableUnconnectedCarry8PinPower 1
+set_param power.enableCarry8RouteBelPower 1
+set_param power.enableLutRouteBelPower 1
+set_param synth.incrementalSynthesisCache C:/Users/tgspo/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-17148-TGSPOCK-DELL-PRECISION-7550/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -81,24 +85,24 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.cache/wt [current_project]
-set_property parent.project_path /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.xpr [current_project]
+set_property webtalk.parent_dir C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.cache/wt [current_project]
+set_property parent.project_path C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
-set_property target_language Verilog [current_project]
-set_property ip_output_repo /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.cache/ip [current_project]
+set_property target_language VHDL [current_project]
+set_property ip_output_repo c:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/sources_1/new/dds_core.vhd
-  /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/sources_1/new/fft_lab_top.vhd
+  C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/sources_1/new/dds_core.vhd
+  C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/sources_1/new/fft_lab_top.vhd
 }
-read_ip -quiet /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/sources_1/ip/dds_ila/dds_ila.xci
-set_property used_in_synthesis false [get_files -all /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.gen/sources_1/ip/dds_ila/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.gen/sources_1/ip/dds_ila/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.gen/sources_1/ip/dds_ila/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.gen/sources_1/ip/dds_ila/dds_ila_ooc.xdc]
+read_ip -quiet C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/sources_1/ip/dds_ila/dds_ila.xci
+set_property used_in_synthesis false [get_files -all c:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.gen/sources_1/ip/dds_ila/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.gen/sources_1/ip/dds_ila/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.gen/sources_1/ip/dds_ila/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.gen/sources_1/ip/dds_ila/dds_ila_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -109,12 +113,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/constrs_1/new/xx_fft_lab.xdc
-set_property used_in_implementation false [get_files /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/constrs_1/new/xx_fft_lab.xdc]
+read_xdc C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/constrs_1/new/xx_fft_lab.xdc
+set_property used_in_implementation false [get_files C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/constrs_1/new/xx_fft_lab.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/utils_1/imports/synth_1/fft_lab_top.dcp
+read_checkpoint -auto_incremental -incremental C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/utils_1/imports/synth_1/fft_lab_top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/constrs_1/new/xx_fft_lab.xdc rfile:../../../xx_fft_lab.srcs/constrs_1/new/xx_fft_lab.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/constrs_1/new/xx_fft_lab.xdc rfile:../../../xx_fft_lab.srcs/constrs_1/new/xx_fft_lab.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN H24 [get_ports clk_p]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]

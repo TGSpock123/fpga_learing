@@ -1,2 +1,0 @@
-dds_ila.v,verilog,xil_defaultlib,../../../../xx_fft_lab.gen/sources_1/ip/dds_ila/sim/dds_ila.v,incdir="../../../../xx_fft_lab.gen/sources_1/ip/dds_ila/hdl/verilog"
-glbl.v,Verilog,xil_defaultlib,glbl.v

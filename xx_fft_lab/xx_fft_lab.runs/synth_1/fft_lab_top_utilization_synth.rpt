@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date         : Thu Apr  2 00:09:55 2026
-| Host         : tgspock-BOHK-WAX9X running 64-bit Ubuntu 20.04.6 LTS
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Fri Apr  3 22:49:52 2026
+| Host         : TGSPOCK-DELL-PRECISION-7550 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file fft_lab_top_utilization_synth.rpt -pb fft_lab_top_utilization_synth.pb
 | Design       : fft_lab_top
 | Device       : xczu19eg-ffvc1760-2-i
@@ -32,8 +32,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs*               |   58 |     0 |          0 |    522720 |  0.01 |
-|   LUT as Logic          |   58 |     0 |          0 |    522720 |  0.01 |
+| CLB LUTs*               |   57 |     0 |          0 |    522720 |  0.01 |
+|   LUT as Logic          |   57 |     0 |          0 |    522720 |  0.01 |
 |   LUT as Memory         |    0 |     0 |          0 |    161280 |  0.00 |
 | CLB Registers           |   84 |     0 |          0 |   1045440 | <0.01 |
 |   Register as Flip Flop |   84 |     0 |          0 |   1045440 | <0.01 |
@@ -164,13 +164,13 @@ Warning! LUT value is adjusted to account for LUT combining.
 | FDRE      |   84 |            Register |
 | LUT2      |   49 |                 CLB |
 | CARRY8    |    6 |                 CLB |
-| LUT4      |    3 |                 CLB |
-| LUT3      |    3 |                 CLB |
-| LUT6      |    2 |                 CLB |
-| LUT5      |    2 |                 CLB |
+| LUT5      |    4 |                 CLB |
+| LUT4      |    2 |                 CLB |
+| LUT3      |    2 |                 CLB |
 | LUT1      |    2 |                 CLB |
 | IBUFCTRL  |    2 |              Others |
 | RAMB18E2  |    1 |            BLOCKRAM |
+| LUT6      |    1 |                 CLB |
 | INBUF     |    1 |                 I/O |
 | DIFFINBUF |    1 |                 I/O |
 | BUFGCE    |    1 |               Clock |

@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.runs/impl_1/fft_lab_top.tcl"
+  variable script "C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.runs/impl_1/fft_lab_top.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,6 +115,8 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -122,25 +124,31 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 2
-  set_param runs.launchOptions { -jobs 6  }
+  set_param checkpoint.writeSynthRtdsInDcp 1
+  set_param chipscope.maxJobs 4
+  set_param power.BramSDPPropagationFix 1
+  set_param power.enableUnconnectedCarry8PinPower 1
+  set_param power.enableCarry8RouteBelPower 1
+  set_param power.enableLutRouteBelPower 1
+  set_param synth.incrementalSynthesisCache C:/Users/tgspo/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-17148-TGSPOCK-DELL-PRECISION-7550/incrSyn
+  set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xczu19eg-ffvc1760-2-i
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.cache/wt [current_project]
-  set_property parent.project_path /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.xpr [current_project]
-  set_property ip_output_repo /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.cache/wt [current_project]
+  set_property parent.project_path C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.xpr [current_project]
+  set_property ip_output_repo C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.runs/synth_1/fft_lab_top.dcp
-  read_ip -quiet /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/sources_1/ip/dds_ila/dds_ila.xci
+  add_files -quiet C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.runs/synth_1/fft_lab_top.dcp
+  read_ip -quiet C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/sources_1/ip/dds_ila/dds_ila.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/tgspock/Github/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/constrs_1/new/xx_fft_lab.xdc
+  read_xdc C:/GitHub/fpga_learing/xx_fft_lab/xx_fft_lab.srcs/constrs_1/new/xx_fft_lab.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
